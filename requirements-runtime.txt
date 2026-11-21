@@ -1,0 +1,12 @@
+# Recorded runtime for the 2026-11-21 execution; Python 3.12.14.
+# Platform wheel dependencies may differ. See each run.json for actual versions.
+numpy==2.3.5
+pandas==2.2.3
+scipy==1.16.3
+scikit-learn==1.6.1
+lightgbm==4.6.0
+joblib==1.5.3
+pyarrow==22.0.0
+threadpoolctl==3.8.0
+matplotlib==3.10.7
+pytest==8.4.2
