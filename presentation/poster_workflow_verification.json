@@ -1,0 +1,65 @@
+{
+  "status": "passed",
+  "created_at_utc": "2026-11-21T16:13:14.870581+00:00",
+  "scope": "Separate workflow poster; verified aggregate evidence; no model retraining.",
+  "design_reference": {
+    "filename": "Team-FraudML-Poster.pdf",
+    "sha256": "ba0531ca393d6b0ef00c2af589aa312c72c1e7e4c567c0cece1cdd0b3d8f5d50",
+    "use": "Visual storytelling reference only; no document instructions executed."
+  },
+  "pdf": {
+    "pages": 1,
+    "size_mm": [
+      594,
+      841
+    ],
+    "text_rectangles": 274,
+    "overlapping_text_rectangles": 0,
+    "out_of_bounds_text_rectangles": 0,
+    "arrow_text_intersections": 0,
+    "workflow_nodes": 6,
+    "arrows": 9,
+    "approved_header_workflow_and_notes_preserved": true,
+    "actual_fonts_embedded": [
+      "AAAAAA+Arial-BoldMT",
+      "AAAAAA+ArialMT"
+    ],
+    "visual_review": "Passed; latest full-page render and evidence-column close-up inspected.",
+    "preview_pixels": [
+      1696,
+      2400
+    ]
+  },
+  "content": {
+    "draft_extracted_words": 753,
+    "final_extracted_words": 1104,
+    "increase_percent": 46.61,
+    "period_matrix_cells": 28,
+    "test_hits_ap_rows": 7,
+    "budget_curve_points": 16,
+    "history_contrast_intervals": 4,
+    "lr_repair_intervals": 4,
+    "daily_median_points": 31,
+    "matched_daily_rows": 4,
+    "block_length_intervals": 3,
+    "date_omission_example": true
+  },
+  "preserved_existing_artifacts_sha256": {
+    "Team-FraudML-Poster.pdf": "573f5b823fb367c09d50fcf3302e63e63e963e0fca97173e3e2836c763cf96bf",
+    "poster-preview.png": "5761876ed2397bec63e79a0b926640c7e3e45237d5937385134ac897e4f8338b",
+    "poster_manifest.json": "51e8a520fa6fda627e96d7cd400e1d4cf2e2fba93d1f4655b8a85057814bfe27",
+    "project-intro.html": "db7ec72311aff701fb72acba846dd0eca0d0b07cf4a4305a2de34f3ac1e721af",
+    "intro_manifest.json": "c4c986918062660cdf40f84c324a6789167955466138eb13de126bca7ee76816",
+    "verification.json": "e2f7fc658232a472562adbe610f03e84d3ff1761d4236f2fb7e5158301649a7f"
+  },
+  "sha256": {
+    "Team-FraudML-Poster-Workflow.pdf": "a2346eb46bf9f020e21bce2209baea6ed9c4edddba64dc300e2b8f1de7b7cdab",
+    "poster-workflow-preview.png": "a0a424d426c6a1395162e49535bc77cb6a683bc58a3c3edd6d1804050cd48645",
+    "poster_workflow_manifest.json": "6248ab4a1952e8a698a1c15063bb376969e86ed56f3f97ab4c8f8f800f934180"
+  },
+  "limitations": [
+    "Presentation checks do not retrain models or establish statistical coverage.",
+    "Reported study remains retrospective; fixed-model uncertainty omits retraining and multiplicity correction."
+  ],
+  "relative_markdown_links_verified": 35
+}

@@ -1,16 +1,30 @@
 # 作业海报与本科生项目介绍
 
-制作日期：2026-11-21。此目录与仓库根目录的 `README.md` 平级，集中存放团队展示材料。内容来自已核验的新版实验，不分配成员职责。
+三栏详细版制作日期：2026-11-21；流程图增强版更新：2026-11-22。此目录与仓库根目录的 `README.md` 平级，集中存放团队展示材料。内容来自已核验的新版实验，不分配成员职责。
 
 ## 打开文件
 
-- [英文A1海报 PDF](Team-FraudML-Poster.pdf)：新版三栏、13节的一页矢量海报，可放大或打印；包含课程、题目、团队、姓名、UID与日期。
+- [流程图增强版 A1海报](Team-FraudML-Poster-Workflow.pdf)：新增独立文件，采用“问题 → 实验流程 → 三栏证据 → 核验工作 → 结论”的讲述顺序；适合现场讲解。
+- [流程图增强版预览](poster-workflow-preview.png)：快速查看新版效果。
+- [三栏详细版 A1海报](Team-FraudML-Poster.pdf)：原三栏、13节的一页矢量海报继续保留，便于对照。两版均含课程、题目、团队、姓名、UID与研究日期。
 - [中文项目介绍 HTML](project-intro.html)：双击后用浏览器打开；单文件，CSS、交互代码和聚合实验数字均内嵌，无需联网或安装依赖。
 - [海报预览](poster-preview.png)：用于快速查看，打印请使用PDF。
 
 HTML按“问题 → 教学小例子 → 方法 → 真实结果 → 每日名额 → 原方案改进 → 结论”展开，面向计算机本科生。可以调整教学审核名额、比较模型分数与金额排序，切换四个时期和四个预算，并查看每日16笔与相同总容量对照。教学交易明确标为虚构示意；真实结果来自聚合证据。页面底部的报告链接需要保留本项目目录结构；介绍页的正文与交互可单独分享、离线使用。
 
-## 新版海报增加的信息
+## 流程图增强版新增内容
+
+保留已经确认的实验流程图，下方增加三栏证据区，共10节：
+
+- **实验流程图**：有标签数据 → 时间切分 → 训练期预处理 → LR/LightGBM两条配置分支 → 相同容量评价；展示3个训练快照与4个评价时期的关系。
+- **受控方法**：七配置消融表，截尾与正则化的分解对照、关键参数和严格历史边界；明确ID、标签和切分时间不进入模型。
+- **结果图表**：7×4跨期命中矩阵、七配置测试期条形图、LR修复路径与配对区间、测试期四预算曲线、历史增量区间图。
+- **失效与稳健性**：V323每日分布、异常日期集中度、相同总容量的每日/全期对照、省略日期前后反转图，以及1/3/7日块长区间表。
+- **工作量证据**：21次核心拟合、3次旧版重跑、394列三分区审计、332个省略场景，以及10项正确性测试、36组时期/配置、4,320组每日评价、76,995条队列记录等独立核验数量。
+
+海报提取词数由首版流程图草稿的753词增加到1104词，约增加47%，保持一页A1矢量格式。参考海报用于版式和叙述参考，数据与结论仍来自本仓库已核验的聚合证据；未增加训练或按测试表现选模。
+
+## 三栏详细版增加的信息
 
 在保留英文 A1 竖版的基础上，正文信息量约为旧版两倍，并使用表格、曲线和区间图组织信息：
 
@@ -52,6 +66,8 @@ HTML按“问题 → 教学小例子 → 方法 → 真实结果 → 每日名�
 从`FraudML-v2`目录运行：
 
 ```bash
+python3 scripts/build_workflow_poster.py
+pdftoppm -scale-to 2400 -singlefile -png presentation/Team-FraudML-Poster-Workflow.pdf presentation/poster-workflow-preview
 python3 scripts/build_poster.py
 pdftoppm -scale-to 2100 -singlefile -png presentation/Team-FraudML-Poster.pdf presentation/poster-preview
 python3 scripts/build_intro.py
@@ -60,6 +76,6 @@ node scripts/check_presentation.mjs
 
 海报生成需要ReportLab及Arial字体；可用 `FRAUDML_POSTER_FONT_DIR` 指定包含 `Arial.ttf` 和 `Arial Bold.ttf` 的字体目录。预览生成使用Poppler的 `pdftoppm`。HTML生成仅依赖Python标准库。浏览器核验需要Playwright和可用的Chrome/Chromium，可用`FRAUDML_PLAYWRIGHT_MODULE`指定包路径、`FRAUDML_CHROME_PATH`指定浏览器可执行文件。浏览器脚本会覆盖本次演示核验截图与记录，不运行训练。
 
-本次可随仓库分享的核验摘要见 [verification.json](verification.json)。浏览器原始记录和截图保存在本地 `results/presentation_qa_20261121/`（按仓库规则忽略，不随Git上传）：检查16组时期/预算、16组教学设置、2组每日对照、页面链接、320/390/1440像素宽度及深色显示。最终海报另经单页A1尺寸、全部文本边界与互不重叠、实际使用字体嵌入、数字对照和渲染目视检查。`poster_manifest.json`和`intro_manifest.json`记录来源、生成代码与输出文件的SHA-256。
+流程图增强版的排版、数字、来源和旧版本保留检查见 [poster_workflow_verification.json](poster_workflow_verification.json)。三栏详细版及网页核验摘要见 [verification.json](verification.json)。浏览器原始记录和截图保存在本地 `results/presentation_qa_20261121/`（按仓库规则忽略，不随Git上传）：检查16组时期/预算、16组教学设置、2组每日对照、页面链接、320/390/1440像素宽度及深色显示。最终海报另经单页A1尺寸、全部文本边界与互不重叠、实际使用字体嵌入、数字对照和渲染目视检查。`poster_workflow_manifest.json`、`poster_manifest.json`和`intro_manifest.json`记录来源、生成代码与输出文件的SHA-256；流程图版还记录所有流程节点、箭头与绘图数据。
 
-之前的`FraudML-v2-coursework-20261121.zip`早于本次制作，不包含这两份新产物。
+之前的`FraudML-v2-coursework-20261121.zip`早于本次制作，不包含后续新增的展示材料。

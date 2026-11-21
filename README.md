@@ -6,9 +6,9 @@
 
 **团队展示材料统一放在根目录 [`presentation/`](presentation/)，与本 README 同级。**
 
-新版海报采用三栏13节，增加完整跨期结果、预算曲线、消融与区间图、数据审计及核验工作量。
+海报提供两个独立版本：新增的**流程图增强版**保留分支流程图，并以三栏证据区展示完整跨期结果、预算曲线、消融、异常日期诊断和核验工作量；原三栏13节详细版继续保留。
 
-展示材料：[英文A1海报](presentation/Team-FraudML-Poster.pdf)、[面向计算机本科生的中文交互介绍页](presentation/project-intro.html)和[使用说明与课程要求对照](presentation/README.md)。网页无需联网，可调整教学审核名额并切换真实实验时期、预算与每日对照。海报与网页不替代课程要求的演示PDF、录制和代码附录PDF；此前提交ZIP不含本次新增材料。
+展示材料：[流程图增强版海报](presentation/Team-FraudML-Poster-Workflow.pdf)、[三栏详细版海报](presentation/Team-FraudML-Poster.pdf)、[面向计算机本科生的中文交互介绍页](presentation/project-intro.html)和[使用说明与课程要求对照](presentation/README.md)。网页无需联网，可调整教学审核名额并切换真实实验时期、预算与每日对照。海报与网页不替代课程要求的演示PDF、录制和代码附录PDF；此前提交ZIP不含本次新增材料。
 
 已完成21次核心拟合、3次旧版重跑，以及每期1000次配对3日块重采样。10项正确性测试通过，真实数据结果通过独立核验：36组时期与配置、4320组每日评价、76995条审核队列记录。主实验状态为verified。`scripts/validate_plan.py`只检查冻结方案与原证据，不能替代模型结果核验。
 
