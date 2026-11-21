@@ -1,0 +1,97 @@
+{
+  "passed": true,
+  "scope": "Current environment and current CSV only; not an exact historical environment reproduction",
+  "code_sha256": "2c6f291973de02af7605b5238fe984058de7601aaef7f73eb75f9bfdace46f01",
+  "checks": [
+    {
+      "period": "validation",
+      "migrated": "LR0",
+      "original": "legacy_LR",
+      "rows": 88581,
+      "passed": true,
+      "max_absolute_errors": {
+        "margin": 0.0,
+        "probability": 0.0
+      },
+      "input_sha256": [
+        "8d31401c2902494b1cda91ff8ad772a45d87d22150406c2c10d9ca5ecfcd1779",
+        "0ec3769729829905e2aa956494a2498b7efd5ba5aef5d6b2ed11fe49462458ee"
+      ]
+    },
+    {
+      "period": "validation",
+      "migrated": "LGB-H0",
+      "original": "legacy_LGB",
+      "rows": 88581,
+      "passed": true,
+      "max_absolute_errors": {
+        "margin": 0.0,
+        "probability": 0.0
+      },
+      "input_sha256": [
+        "af14a578e24fa84c9983cbb370c384521275773c5415b988e72ae275c4194cae",
+        "666d82d8675fcfc63d65836534c7d2c79e5da88fd5182b38dfc0724bf840b4d1"
+      ]
+    },
+    {
+      "period": "validation",
+      "migrated": "LGB-H1",
+      "original": "legacy_history",
+      "rows": 88581,
+      "passed": true,
+      "max_absolute_errors": {
+        "margin": 0.0,
+        "probability": 0.0
+      },
+      "input_sha256": [
+        "2eacd7c1dfcba625d340a2c7d6658542cf8df94b88995dd59ec4336c7602cc25",
+        "64270ae43bfef29dda1e2ea25e41b739c29b888e38a1a3203732dfd9170a16bd"
+      ]
+    },
+    {
+      "period": "test",
+      "migrated": "LR0",
+      "original": "legacy_LR",
+      "rows": 88581,
+      "passed": true,
+      "max_absolute_errors": {
+        "margin": 0.0,
+        "probability": 0.0
+      },
+      "input_sha256": [
+        "227c3ab3891e54f75a552fc515c15d8414f66c5bc6b005fd860bfc23d0c2689b",
+        "76782e954be48f902b4fe9ec4af67f9b9398f4bfbddf2db2aa81417a756c67f1"
+      ]
+    },
+    {
+      "period": "test",
+      "migrated": "LGB-H0",
+      "original": "legacy_LGB",
+      "rows": 88581,
+      "passed": true,
+      "max_absolute_errors": {
+        "margin": 0.0,
+        "probability": 0.0
+      },
+      "input_sha256": [
+        "015a829bc5e478b37d086b60b15138c45a94772de9a7bc0e1cda22143abde79e",
+        "0355c0d83fcd176388242feafa5764a2cb23a13bb796bca5a6539e02d74ff479"
+      ]
+    },
+    {
+      "period": "test",
+      "migrated": "LGB-H1",
+      "original": "legacy_history",
+      "rows": 88581,
+      "passed": true,
+      "max_absolute_errors": {
+        "margin": 0.0,
+        "probability": 0.0
+      },
+      "input_sha256": [
+        "ea25bd533976d7aeacd9b14c75ba9d0402e75a5eac758b82c08a61ff6877ffc9",
+        "2f6d93d00ab3e3bf04c57382bf400d09a793be14e942fe7c7a8c6d04428ee12f"
+      ]
+    }
+  ]
+}

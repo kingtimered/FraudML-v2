@@ -1,0 +1,36 @@
+{
+  "version": "2026-11-21.supplement1",
+  "analysis_type": "post_hoc_sensitivity_no_tuning",
+  "source_run_id": "study_20261121_01",
+  "retrain": false,
+  "quality_audit": {
+    "partitions": ["train", "validation", "test"],
+    "all_raw_columns": true,
+    "numeric_quantiles": [0, 0.001, 0.01, 0.5, 0.99, 0.999, 1],
+    "reference": "original_train_only",
+    "focused_features": ["V323", "V332", "V324", "V177", "V179", "TransactionAmt"],
+    "focused_test_days": [171, 172],
+    "day_selection_reason": "Already observed concentration of LR0 highest scores; explicitly post hoc"
+  },
+  "sensitivity": {
+    "models": ["LR0", "LR1", "LR2", "LGB-H0", "LGB-H1", "LGB-H2", "LGB-H3"],
+    "block_days": [1, 3, 7],
+    "draws": 1000,
+    "seed": 20261121,
+    "reuse_existing_three_day_intervals": true,
+    "period_rate": 0.005,
+    "daily_scenario": "fixed_16",
+    "omit_every_contiguous_window_days": [1, 2, 7],
+    "omit_does_not_rebuild_history": true,
+    "main_contrasts": [["LR2", "LR0"], ["LGB-H3", "LGB-H0"]],
+    "diagnostic_contrasts": [["LR1", "LR0"], ["LR2", "LR1"], ["LGB-H1", "LGB-H0"], ["LGB-H2", "LGB-H1"], ["LGB-H3", "LGB-H2"]]
+  },
+  "interpretation": [
+    "No new model selection or changes to frozen main protocol",
+    "Intervals condition on observed fitted models and dates",
+    "One-day blocks are an independence sensitivity reference, not a preferred method",
+    "Seven-day blocks contain few effective blocks and do not establish coverage",
+    "Omission analyses measure influence, not permission to remove difficult dates",
+    "No multiplicity adjustment and no independent new validation"
+  ]
+}

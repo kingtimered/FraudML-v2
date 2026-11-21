@@ -1,0 +1,275 @@
+{
+  "run_id": "study_20261121_01",
+  "status": "verified",
+  "kind": "full_study",
+  "protocol_version": "2026-11-21.plan2",
+  "protocol_sha256": "e9d9f72b198feea20c3f4c46bc25f863bd526dda48f130a46318d4d4c6228ab2",
+  "analysis_type": "retrospective",
+  "command": [
+    "scripts/run_study.py",
+    "--run-id",
+    "study_20261121_01"
+  ],
+  "created_at_utc": "2026-11-21T12:54:39.453130+00:00",
+  "environment": {
+    "python": "3.12.14",
+    "platform": "macOS-15.7.9-arm64-arm-64bit",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.6.1",
+    "scipy": "1.16.3",
+    "lightgbm": "4.6.0",
+    "joblib": "1.5.3",
+    "pyarrow": "22.0.0",
+    "threadpoolctl": "3.8.0"
+  },
+  "source_hashes": {
+    "fraudml_v2/__init__.py": "f4c3648542c042ffdae828c073a91241d3c3a3ba0d523ac3293bd84e39a06758",
+    "fraudml_v2/evaluation.py": "207603f22ac0775efd96768435ff3ca63a3ed759f336350f7d4f40ecaf532a79",
+    "fraudml_v2/features.py": "53457657ae055eed6f75ba89ba97bb6a34f56d1f5e117a67571e124aefa97621",
+    "fraudml_v2/models.py": "1794d94fb8e5911936233a05568c708d37ed52e7a93ef8e430245d9f8282c45a",
+    "scripts/analyze_results.py": "2949fcad5e1151b96e336efbd9a64f9c65ec34461089ce6880ec7c450d5eed22",
+    "scripts/audit_data.py": "dfcf46bfd1fd74ee97469d18b77eae63a41953e701b3ad67f819f6582b98874b",
+    "scripts/python_env.py": "1855326e86deb6a2fda60ae2fd869777df4f03dbd6931baf467f3463a4d6954d",
+    "scripts/run_study.py": "7b4c182fc736b976a653689e5d54b0efdbccabec04b14bf62017292004f77769",
+    "scripts/validate_plan.py": "b9122db866ae431656ffc56acbb496c37c05b45903691c2ceeeb78b01db24d75"
+  },
+  "completed_fits": [
+    {
+      "snapshot": "dev_F1",
+      "model": "LR0",
+      "generation": "initial",
+      "converged": true,
+      "seconds": 72.30602358399483
+    },
+    {
+      "snapshot": "dev_F1",
+      "model": "LR1",
+      "generation": "initial",
+      "converged": true,
+      "seconds": 76.95775499999581
+    },
+    {
+      "snapshot": "dev_F1",
+      "model": "LR2",
+      "generation": "initial",
+      "converged": true,
+      "seconds": 50.490367332997266
+    },
+    {
+      "snapshot": "dev_F1",
+      "model": "LGB-H0",
+      "generation": "initial",
+      "converged": true,
+      "seconds": 15.330303916998673
+    },
+    {
+      "snapshot": "dev_F1",
+      "model": "LGB-H1",
+      "generation": "initial",
+      "converged": true,
+      "seconds": 15.007039374992019
+    },
+    {
+      "snapshot": "dev_F1",
+      "model": "LGB-H2",
+      "generation": "initial",
+      "converged": true,
+      "seconds": 15.097022250003647
+    },
+    {
+      "snapshot": "dev_F1",
+      "model": "LGB-H3",
+      "generation": "initial",
+      "converged": true,
+      "seconds": 15.352335667004809
+    },
+    {
+      "snapshot": "dev_F2",
+      "model": "LR0",
+      "generation": "initial",
+      "converged": true,
+      "seconds": 104.11490337499708
+    },
+    {
+      "snapshot": "dev_F2",
+      "model": "LR1",
+      "generation": "initial",
+      "converged": true,
+      "seconds": 98.24227283301298
+    },
+    {
+      "snapshot": "dev_F2",
+      "model": "LR2",
+      "generation": "initial",
+      "converged": true,
+      "seconds": 69.6172951250046
+    },
+    {
+      "snapshot": "dev_F2",
+      "model": "LGB-H0",
+      "generation": "initial",
+      "converged": true,
+      "seconds": 20.192950458003907
+    },
+    {
+      "snapshot": "dev_F2",
+      "model": "LGB-H1",
+      "generation": "initial",
+      "converged": true,
+      "seconds": 20.347817375004524
+    },
+    {
+      "snapshot": "dev_F2",
+      "model": "LGB-H2",
+      "generation": "initial",
+      "converged": true,
+      "seconds": 20.514280624993262
+    },
+    {
+      "snapshot": "dev_F2",
+      "model": "LGB-H3",
+      "generation": "initial",
+      "converged": true,
+      "seconds": 20.737329000010504
+    },
+    {
+      "snapshot": "original_train",
+      "model": "LR0",
+      "generation": "initial",
+      "converged": true,
+      "seconds": 125.6852912089962
+    },
+    {
+      "snapshot": "original_train",
+      "model": "LR1",
+      "generation": "initial",
+      "converged": true,
+      "seconds": 121.9328007909935
+    },
+    {
+      "snapshot": "original_train",
+      "model": "LR2",
+      "generation": "initial",
+      "converged": true,
+      "seconds": 99.93320308299735
+    },
+    {
+      "snapshot": "original_train",
+      "model": "LGB-H0",
+      "generation": "initial",
+      "converged": true,
+      "seconds": 29.648273124999832
+    },
+    {
+      "snapshot": "original_train",
+      "model": "LGB-H1",
+      "generation": "initial",
+      "converged": true,
+      "seconds": 30.280741875001695
+    },
+    {
+      "snapshot": "original_train",
+      "model": "LGB-H2",
+      "generation": "initial",
+      "converged": true,
+      "seconds": 30.61122691600758
+    },
+    {
+      "snapshot": "original_train",
+      "model": "LGB-H3",
+      "generation": "initial",
+      "converged": true,
+      "seconds": 30.589424916994176
+    }
+  ],
+  "fit_failures": [],
+  "data_sha256": "3a5c83ab6b3cc13dcabe5ffa9f522307fd5f7f7b6e6f6a60c32284ca6283d642",
+  "history_seconds": 0.37948158400831744,
+  "elapsed_seconds": 1112.5355280410004,
+  "finished_at_utc": "2026-11-21T13:13:12.009467+00:00",
+  "manifest": [
+    "daily_metrics.csv",
+    "diagnostics.json",
+    "figures/budget_precision.pdf",
+    "figures/budget_precision.png",
+    "figures/manifest.json",
+    "figures/primary_intervals.pdf",
+    "figures/primary_intervals.png",
+    "figures/weekly_daily16.pdf",
+    "figures/weekly_daily16.png",
+    "integration_checks.json",
+    "legacy_alignment.json",
+    "lr_day_concentration.json",
+    "lr_score_contributions.json",
+    "metrics.json",
+    "models/dev_F1__LGB-H0__initial.joblib",
+    "models/dev_F1__LGB-H1__initial.joblib",
+    "models/dev_F1__LGB-H2__initial.joblib",
+    "models/dev_F1__LGB-H3__initial.joblib",
+    "models/dev_F1__LR0__initial.joblib",
+    "models/dev_F1__LR1__initial.joblib",
+    "models/dev_F1__LR2__initial.joblib",
+    "models/dev_F2__LGB-H0__initial.joblib",
+    "models/dev_F2__LGB-H1__initial.joblib",
+    "models/dev_F2__LGB-H2__initial.joblib",
+    "models/dev_F2__LGB-H3__initial.joblib",
+    "models/dev_F2__LR0__initial.joblib",
+    "models/dev_F2__LR1__initial.joblib",
+    "models/dev_F2__LR2__initial.joblib",
+    "models/original_train__LGB-H0__initial.joblib",
+    "models/original_train__LGB-H1__initial.joblib",
+    "models/original_train__LGB-H2__initial.joblib",
+    "models/original_train__LGB-H3__initial.joblib",
+    "models/original_train__LR0__initial.joblib",
+    "models/original_train__LR1__initial.joblib",
+    "models/original_train__LR2__initial.joblib",
+    "paired_intervals.json",
+    "predictions/dev_F1__LGB-H0__initial.parquet",
+    "predictions/dev_F1__LGB-H1__initial.parquet",
+    "predictions/dev_F1__LGB-H2__initial.parquet",
+    "predictions/dev_F1__LGB-H3__initial.parquet",
+    "predictions/dev_F1__LR0__initial.parquet",
+    "predictions/dev_F1__LR1__initial.parquet",
+    "predictions/dev_F1__LR2__initial.parquet",
+    "predictions/dev_F1__amount__initial.parquet",
+    "predictions/dev_F1__random_seed42__initial.parquet",
+    "predictions/dev_F2__LGB-H0__initial.parquet",
+    "predictions/dev_F2__LGB-H1__initial.parquet",
+    "predictions/dev_F2__LGB-H2__initial.parquet",
+    "predictions/dev_F2__LGB-H3__initial.parquet",
+    "predictions/dev_F2__LR0__initial.parquet",
+    "predictions/dev_F2__LR1__initial.parquet",
+    "predictions/dev_F2__LR2__initial.parquet",
+    "predictions/dev_F2__amount__initial.parquet",
+    "predictions/dev_F2__random_seed42__initial.parquet",
+    "predictions/test__LGB-H0__initial.parquet",
+    "predictions/test__LGB-H1__initial.parquet",
+    "predictions/test__LGB-H2__initial.parquet",
+    "predictions/test__LGB-H3__initial.parquet",
+    "predictions/test__LR0__initial.parquet",
+    "predictions/test__LR1__initial.parquet",
+    "predictions/test__LR2__initial.parquet",
+    "predictions/test__amount__initial.parquet",
+    "predictions/test__random_seed42__initial.parquet",
+    "predictions/validation__LGB-H0__initial.parquet",
+    "predictions/validation__LGB-H1__initial.parquet",
+    "predictions/validation__LGB-H2__initial.parquet",
+    "predictions/validation__LGB-H3__initial.parquet",
+    "predictions/validation__LR0__initial.parquet",
+    "predictions/validation__LR1__initial.parquet",
+    "predictions/validation__LR2__initial.parquet",
+    "predictions/validation__amount__initial.parquet",
+    "predictions/validation__random_seed42__initial.parquet",
+    "primary_results.csv",
+    "probability_diagnostics.json",
+    "protocol.json",
+    "review_queues.parquet",
+    "splits.json",
+    "verification.json",
+    "weekly_metrics.csv",
+    "新版实验结果.md"
+  ],
+  "verification_passed": true,
+  "delivery_completed_at_utc": "2026-11-21T13:19:34.487903+00:00"
+}

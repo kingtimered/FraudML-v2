@@ -1,0 +1,55 @@
+{
+  "passed": true,
+  "archive_sha256": "f1e6bd7e3708c8a9350a3ac04a468a2add81776a8137418775db7790469447f4",
+  "extracted_without_raw_data": true,
+  "checks": [
+    {
+      "command": [
+        "/Users/moshow/Documents/001_CityUMaster/5001-C61/5001-Teamwork/github/FraudML-v2/results/clean_environment_20261121_01/.venv/bin/python",
+        "scripts/python_env.py",
+        "-m",
+        "pytest",
+        "-q"
+      ],
+      "exit_code": 0,
+      "output": "..........                                                               [100%]\n10 passed in 1.25s\n"
+    },
+    {
+      "command": [
+        "/Users/moshow/Documents/001_CityUMaster/5001-C61/5001-Teamwork/github/FraudML-v2/results/clean_environment_20261121_01/.venv/bin/python",
+        "scripts/python_env.py",
+        "scripts/run_study.py",
+        "--run-id",
+        "bundle_smoke",
+        "--smoke"
+      ],
+      "exit_code": 0,
+      "output": "Snapshot dev_F1: train=929\n  LR0 initial: 0.0s, converged=True\n  LR1 initial: 0.0s, converged=True\n  LR2 initial: 0.0s, converged=True\n  LGB-H0 initial: 0.0s, converged=True\n  LGB-H1 initial: 0.0s, converged=True\n  LGB-H2 initial: 0.0s, converged=True\n  LGB-H3 initial: 0.0s, converged=True\nSnapshot dev_F2: train=1,370\n  LR0 initial: 0.0s, converged=True\n  LR1 initial: 0.0s, converged=True\n  LR2 initial: 0.0s, converged=True\n  LGB-H0 initial: 0.0s, converged=True\n  LGB-H1 initial: 0.0s, converged=True\n  LGB-H2 initial: 0.0s, converged=True\n  LGB-H3 initial: 0.0s, converged=True\nSnapshot original_train: train=1,959\n  LR0 initial: 0.1s, converged=True\n  LR1 initial: 0.1s, converged=True\n  LR2 initial: 0.1s, converged=True\n  LGB-H0 initial: 0.1s, converged=True\n  LGB-H1 initial: 0.1s, converged=True\n  LGB-H2 initial: 0.1s, converged=True\n  LGB-H3 initial: 0.1s, converged=True\nCompleted synthetic_smoke: /Users/moshow/Documents/001_CityUMaster/5001-C61/5001-Teamwork/github/FraudML-v2/results/submission_unpack_check_20261121_01/FraudML-v2/results/bundle_smoke (1.2s)\n"
+    },
+    {
+      "command": [
+        "/Users/moshow/Documents/001_CityUMaster/5001-C61/5001-Teamwork/github/FraudML-v2/results/clean_environment_20261121_01/.venv/bin/python",
+        "scripts/python_env.py",
+        "scripts/analyze_results.py",
+        "--run-id",
+        "bundle_smoke",
+        "--smoke-draws",
+        "30"
+      ],
+      "exit_code": 0,
+      "output": "Analyzing dev_F1: 30 paired 3-day-block draws\nAnalyzing dev_F2: 30 paired 3-day-block draws\nAnalyzing validation: 30 paired 3-day-block draws\nAnalyzing test: 30 paired 3-day-block draws\nWrote paired intervals and Chinese result report (0.2s)\n/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l1dcachesize'. Detail: [errno 1] Operation not permitted\n/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l2cachesize'. Detail: [errno 1] Operation not permitted\n/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l3cachesize'. Detail: [errno 1] Operation not permitted\n/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.optional.neon'. Detail: [errno 1] Operation not permitted\n"
+    },
+    {
+      "command": [
+        "/Users/moshow/Documents/001_CityUMaster/5001-C61/5001-Teamwork/github/FraudML-v2/results/clean_environment_20261121_01/.venv/bin/python",
+        "scripts/python_env.py",
+        "scripts/verify_study.py",
+        "--run-id",
+        "bundle_smoke"
+      ],
+      "exit_code": 0,
+      "output": "PASS: {'period_model_pairs': 36, 'daily_groups': 3996, 'queue_rows': 38349}\n/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l1dcachesize'. Detail: [errno 1] Operation not permitted\n/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l2cachesize'. Detail: [errno 1] Operation not permitted\n/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l3cachesize'. Detail: [errno 1] Operation not permitted\n/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.optional.neon'. Detail: [errno 1] Operation not permitted\n"
+    }
+  ],
+  "scope": "Correctness tests and synthetic end-to-end in unpacked submission; no full real-data retraining"
+}

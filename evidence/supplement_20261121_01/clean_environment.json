@@ -1,0 +1,223 @@
+{
+  "status": "passed",
+  "created_at_utc": "2026-11-21T13:45:48.031735+00:00",
+  "scope": "Isolated dependency installation, correctness tests and synthetic pipeline; no full real-data retraining",
+  "code_sha256": "5680afe80e29e76cf5cb6e31e0e539d04d804a6514a05b3754a7e27fa12825b0",
+  "pyvenv_cfg": "home = /Users/moshow/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin\ninclude-system-site-packages = false\nversion = 3.12.14\nexecutable = /Users/moshow/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3.12\ncommand = /Users/moshow/Documents/001_CityUMaster/5001-C61/5001-Teamwork/github/FraudML-v2/.venv/bin/python -m venv /Users/moshow/Documents/001_CityUMaster/5001-C61/5001-Teamwork/github/FraudML-v2/results/clean_environment_20261121_01/.venv\n",
+  "requirements_sha256": "8ea87de159088e08b296405cbfbfb697e98726e099bc54e4609e5cb3f946bf2e",
+  "checks": [
+    {
+      "name": "environment",
+      "command": [
+        "/Users/moshow/Documents/001_CityUMaster/5001-C61/5001-Teamwork/github/FraudML-v2/results/clean_environment_20261121_01/.venv/bin/python",
+        "-c",
+        "import json,sys,importlib.metadata as m; print(json.dumps({'python':sys.version,'prefix':sys.prefix,'base_prefix':sys.base_prefix,'path':sys.path,'versions':{d.metadata['Name']:d.version for d in m.distributions()}},indent=2))"
+      ],
+      "exit_code": 0,
+      "output_sha256": "feaf7164066b51f43d862ea5ac557af7334e990aaa751eed39cdf3150a70eedf",
+      "output": "{\n  \"python\": \"3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]\",\n  \"prefix\": \"/Users/moshow/Documents/001_CityUMaster/5001-C61/5001-Teamwork/github/FraudML-v2/results/clean_environment_20261121_01/.venv\",\n  \"base_prefix\": \"/Users/moshow/.cache/codex-runtimes/codex-primary-runtime/dependencies/python\",\n  \"path\": [\n    \"\",\n    \"/Users/moshow/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python312.zip\",\n    \"/Users/moshow/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12\",\n    \"/Users/moshow/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/lib-dynload\",\n    \"/Users/moshow/Documents/001_CityUMaster/5001-C61/5001-Teamwork/github/FraudML-v2/results/clean_environment_20261121_01/.venv/lib/python3.12/site-packages\"\n  ],\n  \"versions\": {\n    \"lightgbm\": \"4.6.0\",\n    \"pandas\": \"2.2.3\",\n    \"kiwisolver\": \"1.5.1\",\n    \"packaging\": \"26.3\",\n    \"pyarrow\": \"22.0.0\",\n    \"Pygments\": \"2.21.0\",\n    \"scikit-learn\": \"1.6.1\",\n    \"numpy\": \"2.3.5\",\n    \"iniconfig\": \"2.3.1\",\n    \"pillow\": \"13.0.0\",\n    \"contourpy\": \"1.4.0\",\n    \"pluggy\": \"1.7.0\",\n    \"pip\": \"25.0.1\",\n    \"scipy\": \"1.16.3\",\n    \"pytest\": \"8.4.2\",\n    \"joblib\": \"1.5.3\",\n    \"cycler\": \"0.12.1\",\n    \"fonttools\": \"4.68.0\",\n    \"tzdata\": \"2026.6\",\n    \"python-dateutil\": \"4.0.0\",\n    \"threadpoolctl\": \"3.8.0\",\n    \"pyparsing\": \"3.3.3\",\n    \"matplotlib\": \"3.10.7\",\n    \"pytz\": \"2026.6\"\n  }\n}\n"
+    },
+    {
+      "name": "pip_check",
+      "command": [
+        "/Users/moshow/Documents/001_CityUMaster/5001-C61/5001-Teamwork/github/FraudML-v2/results/clean_environment_20261121_01/.venv/bin/python",
+        "-m",
+        "pip",
+        "check"
+      ],
+      "exit_code": 0,
+      "output_sha256": "2bc8aa8c0ba0f6e22700430a3ec0af896a4c38ba6bf62435ea43d5fd53a5ee69",
+      "output": "No broken requirements found.\nWARNING: The directory '/Users/moshow/Library/Caches/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.\n"
+    },
+    {
+      "name": "freeze",
+      "command": [
+        "/Users/moshow/Documents/001_CityUMaster/5001-C61/5001-Teamwork/github/FraudML-v2/results/clean_environment_20261121_01/.venv/bin/python",
+        "-m",
+        "pip",
+        "freeze"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e024ee5f4c2053ffa409682399761b2687b99bac9cc149af722bcad746221d35",
+      "output": "contourpy==1.4.0\ncycler==0.12.1\nfonttools==4.68.0\niniconfig==2.3.1\njoblib==1.5.3\nkiwisolver==1.5.1\nlightgbm==4.6.0\nmatplotlib==3.10.7\nnumpy==2.3.5\npackaging==26.3\npandas==2.2.3\npillow==13.0.0\npluggy==1.7.0\npyarrow==22.0.0\nPygments==2.21.0\npyparsing==3.3.3\npytest==8.4.2\npython-dateutil==4.0.0\npytz==2026.6\nscikit-learn==1.6.1\nscipy==1.16.3\nthreadpoolctl==3.8.0\ntzdata==2026.6\nWARNING: The directory '/Users/moshow/Library/Caches/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.\n"
+    },
+    {
+      "name": "correctness",
+      "command": [
+        "/Users/moshow/Documents/001_CityUMaster/5001-C61/5001-Teamwork/github/FraudML-v2/results/clean_environment_20261121_01/.venv/bin/python",
+        "scripts/python_env.py",
+        "-m",
+        "pytest",
+        "-q"
+      ],
+      "exit_code": 0,
+      "output_sha256": "3ed939fdb8cdfa9574592bad9a3441e51093cf925b78978b9e337c5435f77204",
+      "output": "..........                                                               [100%]\n10 passed in 26.61s\n"
+    },
+    {
+      "name": "synthetic_fit",
+      "command": [
+        "/Users/moshow/Documents/001_CityUMaster/5001-C61/5001-Teamwork/github/FraudML-v2/results/clean_environment_20261121_01/.venv/bin/python",
+        "scripts/python_env.py",
+        "scripts/run_study.py",
+        "--run-id",
+        "clean_smoke_20261121_01",
+        "--smoke"
+      ],
+      "exit_code": 0,
+      "output_sha256": "3a24e766b83dc6032770f91579c0b7cdc38454986a0c17064ccab1bf06246a09",
+      "output": "Snapshot dev_F1: train=929\n  LR0 initial: 0.0s, converged=True\n  LR1 initial: 0.0s, converged=True\n  LR2 initial: 0.0s, converged=True\n  LGB-H0 initial: 0.0s, converged=True\n  LGB-H1 initial: 0.0s, converged=True\n  LGB-H2 initial: 0.0s, converged=True\n  LGB-H3 initial: 0.0s, converged=True\nSnapshot dev_F2: train=1,370\n  LR0 initial: 0.0s, converged=True\n  LR1 initial: 0.0s, converged=True\n  LR2 initial: 0.0s, converged=True\n  LGB-H0 initial: 0.0s, converged=True\n  LGB-H1 initial: 0.0s, converged=True\n  LGB-H2 initial: 0.0s, converged=True\n  LGB-H3 initial: 0.0s, converged=True\nSnapshot original_train: train=1,959\n  LR0 initial: 0.1s, converged=True\n  LR1 initial: 0.1s, converged=True\n  LR2 initial: 0.1s, converged=True\n  LGB-H0 initial: 0.1s, converged=True\n  LGB-H1 initial: 0.1s, converged=True\n  LGB-H2 initial: 0.1s, converged=True\n  LGB-H3 initial: 0.1s, converged=True\nCompleted synthetic_smoke: /Users/moshow/Documents/001_CityUMaster/5001-C61/5001-Teamwork/github/FraudML-v2/results/clean_smoke_20261121_01 (1.8s)\n"
+    },
+    {
+      "name": "synthetic_analysis",
+      "command": [
+        "/Users/moshow/Documents/001_CityUMaster/5001-C61/5001-Teamwork/github/FraudML-v2/results/clean_environment_20261121_01/.venv/bin/python",
+        "scripts/python_env.py",
+        "scripts/analyze_results.py",
+        "--run-id",
+        "clean_smoke_20261121_01",
+        "--smoke-draws",
+        "30"
+      ],
+      "exit_code": 0,
+      "output_sha256": "65b7812a85cbcf207aa7b52f7ec2dd9d26c12cf1fce3bc7ab0f7df2cc1ec6989",
+      "output": "Analyzing dev_F1: 30 paired 3-day-block draws\nAnalyzing dev_F2: 30 paired 3-day-block draws\nAnalyzing validation: 30 paired 3-day-block draws\nAnalyzing test: 30 paired 3-day-block draws\nWrote paired intervals and Chinese result report (1.3s)\n/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l1dcachesize'. Detail: [errno 1] Operation not permitted\n/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l2cachesize'. Detail: [errno 1] Operation not permitted\n/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l3cachesize'. Detail: [errno 1] Operation not permitted\n/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.optional.neon'. Detail: [errno 1] Operation not permitted\n"
+    },
+    {
+      "name": "synthetic_verification",
+      "command": [
+        "/Users/moshow/Documents/001_CityUMaster/5001-C61/5001-Teamwork/github/FraudML-v2/results/clean_environment_20261121_01/.venv/bin/python",
+        "scripts/python_env.py",
+        "scripts/verify_study.py",
+        "--run-id",
+        "clean_smoke_20261121_01"
+      ],
+      "exit_code": 0,
+      "output_sha256": "5762e71076e0a400b7ed01d5b05fcc1c7e32bc8fdbcd9f9783078404c8159b7b",
+      "output": "PASS: {'period_model_pairs': 36, 'daily_groups': 3996, 'queue_rows': 38349}\n/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l1dcachesize'. Detail: [errno 1] Operation not permitted\n/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l2cachesize'. Detail: [errno 1] Operation not permitted\n/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l3cachesize'. Detail: [errno 1] Operation not permitted\n/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.optional.neon'. Detail: [errno 1] Operation not permitted\n"
+    }
+  ],
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+    "prefix": "/Users/moshow/Documents/001_CityUMaster/5001-C61/5001-Teamwork/github/FraudML-v2/results/clean_environment_20261121_01/.venv",
+    "base_prefix": "/Users/moshow/.cache/codex-runtimes/codex-primary-runtime/dependencies/python",
+    "path": [
+      "",
+      "/Users/moshow/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python312.zip",
+      "/Users/moshow/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12",
+      "/Users/moshow/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/lib-dynload",
+      "/Users/moshow/Documents/001_CityUMaster/5001-C61/5001-Teamwork/github/FraudML-v2/results/clean_environment_20261121_01/.venv/lib/python3.12/site-packages"
+    ],
+    "versions": {
+      "lightgbm": "4.6.0",
+      "pandas": "2.2.3",
+      "kiwisolver": "1.5.1",
+      "packaging": "26.3",
+      "pyarrow": "22.0.0",
+      "Pygments": "2.21.0",
+      "scikit-learn": "1.6.1",
+      "numpy": "2.3.5",
+      "iniconfig": "2.3.1",
+      "pillow": "13.0.0",
+      "contourpy": "1.4.0",
+      "pluggy": "1.7.0",
+      "pip": "25.0.1",
+      "scipy": "1.16.3",
+      "pytest": "8.4.2",
+      "joblib": "1.5.3",
+      "cycler": "0.12.1",
+      "fonttools": "4.68.0",
+      "tzdata": "2026.6",
+      "python-dateutil": "4.0.0",
+      "threadpoolctl": "3.8.0",
+      "pyparsing": "3.3.3",
+      "matplotlib": "3.10.7",
+      "pytz": "2026.6"
+    }
+  },
+  "smoke": {
+    "run_id": "clean_smoke_20261121_01",
+    "kind": "synthetic_smoke",
+    "status": "executed_smoke",
+    "verification": {
+      "passed": true,
+      "kind": "synthetic_smoke",
+      "checks": {
+        "period_model_pairs": 36,
+        "daily_groups": 3996,
+        "queue_rows": 38349
+      },
+      "artifact_sha256": {
+        "predictions/dev_F1__amount__initial.parquet": "1a92b94614efcc15f3c3f508d21091677268694d2e872c381e21a32b74b51bad",
+        "predictions/dev_F1__random_seed42__initial.parquet": "0ce63a2a46011b9bda2e95c3d6f0977175a508824e0f8c966e3a74c7a454d774",
+        "predictions/dev_F1__LR0__initial.parquet": "74daa93bd6c36c27ff00cd2f331a3d07aa63fcc11c6c3aeace537dc821f82bbc",
+        "predictions/dev_F1__LR1__initial.parquet": "af0a5c09f683415a23fbfa9930e39e543cd09fddf4182b95dfd55a3eb7776555",
+        "predictions/dev_F1__LR2__initial.parquet": "394873eb89b084ff648b4b309fc48678ba8ea290d4750a4d14ba016fc098b4b0",
+        "predictions/dev_F1__LGB-H0__initial.parquet": "3b46adc33e581ee4c1c53b07e973b44f72f87f450d9b8706502e5502551b3ffe",
+        "predictions/dev_F1__LGB-H1__initial.parquet": "713d060d1bdbfeb1c2d7012d25e04c18b47d070136956c82dd64b1641d0dfeab",
+        "predictions/dev_F1__LGB-H2__initial.parquet": "0e72e251879463a05e76c92ab6a1d0e03edf9005fc6e239894f0c9f837bda6d6",
+        "predictions/dev_F1__LGB-H3__initial.parquet": "a67078ff2ded277db5717ada737fe8bb79feccceff55a47daedc945c8a0fe6b5",
+        "predictions/dev_F2__amount__initial.parquet": "f249821a5792826a546e568e68cc6d478ee77b934f7bb23d29cd00a6236f5805",
+        "predictions/dev_F2__random_seed42__initial.parquet": "7c3c3070789c586df07e96a87edd8456b1ae8b4e64bc48e699c112c031ad42ee",
+        "predictions/dev_F2__LR0__initial.parquet": "1667f9cc4ec1d05dd014ae2e198cd14cc0f58af2ebc380a506348425cfbef9a2",
+        "predictions/dev_F2__LR1__initial.parquet": "6dae2096a1400bf6e9a698136b350f6f9e282ea8c8aadcab3cc811fe062566ba",
+        "predictions/dev_F2__LR2__initial.parquet": "e5ba994e6d6aa0c00108f7255a5ad1eb51c069b55ba699cde0de1d9ddd7f8957",
+        "predictions/dev_F2__LGB-H0__initial.parquet": "a0bcb3b69cc526f186420273efe8b16508aa99496db67b2677f14c974d5d393c",
+        "predictions/dev_F2__LGB-H1__initial.parquet": "002cf7f9246103e36e05580c63cc347d3a0292fd693f91b6ca421f53dbcf7510",
+        "predictions/dev_F2__LGB-H2__initial.parquet": "2c7ce68f524aed4d2e99c4e04475df1029846feaaec32a415e42bd095c1c1342",
+        "predictions/dev_F2__LGB-H3__initial.parquet": "faf1ee0e04be233ff5257c089da4788ea0c91b610f754a0624b390e68d63d579",
+        "predictions/validation__amount__initial.parquet": "514944ef70672e269be0f1b00b003cb5f2c56271a8235d864648d32237f1c5f2",
+        "predictions/validation__random_seed42__initial.parquet": "0e521c1963fa90b4617c6cc19b1018aaca81a07fbcbd8b651d3d07d173db19a5",
+        "predictions/validation__LR0__initial.parquet": "f336f58fa44cecba4c0ce9aa4f91566d054436b9b49b7df4c9eda82c78be0c91",
+        "predictions/validation__LR1__initial.parquet": "86d11fc870a12fd59c426d8fa92f914ee153b2f2aaed4db7fd9b2827a3c3af70",
+        "predictions/validation__LR2__initial.parquet": "f613b20f2ea431b7474850d89180a4803699671ff004ff705fc25ac33eda1011",
+        "predictions/validation__LGB-H0__initial.parquet": "4b53a5f2122f8c4e9ffc71bf814fca61f860b9b86c75bd1c51276d63511da71c",
+        "predictions/validation__LGB-H1__initial.parquet": "067d39bc43119cc3b0734af2f2b86d634d14eb59ec4e1c2b3070162718b5d172",
+        "predictions/validation__LGB-H2__initial.parquet": "820f81ae0ddee922b54e71344e6174cdb0c21f251eaf760c57a93ec8236df7c6",
+        "predictions/validation__LGB-H3__initial.parquet": "0cc16ff7fb13c3b724262ac67ef6a8ecd4764d677ce0ea018470744ecbcd25c4",
+        "predictions/test__amount__initial.parquet": "755ec668b74cb33ac7744d862fcbc65aec8ad780363be6384e901e5e6b87d5c9",
+        "predictions/test__random_seed42__initial.parquet": "371d27444b3170165efb8bd34a7430e7243661779291f37a92f9dd9333e890d1",
+        "predictions/test__LR0__initial.parquet": "24b21cf40e901ed6d7aa79c6c8a1a95021c3547bed6576bd10e4c18978bf96d4",
+        "predictions/test__LR1__initial.parquet": "feaa59912ce15af6db8f2cce4525f6947947ad3dc9f77ea9e8c9794ba663971f",
+        "predictions/test__LR2__initial.parquet": "14f17a7bed001f0553bb6f457dc4c6a894820f30162777338e1f9b3383f8ed67",
+        "predictions/test__LGB-H0__initial.parquet": "e9b99e4469b2e6ec7cd356dc0e70838e913680f1fc87f0e50a06121ec15eae6d",
+        "predictions/test__LGB-H1__initial.parquet": "403d5ac4b44921e11220c1f65a0f56f5f0aa04f5ba1509f314200ae5af214fd7",
+        "predictions/test__LGB-H2__initial.parquet": "75f6b2317265c7830bad8e376cfdcbb099ae5cd351295fb9f634dbeaa518f77e",
+        "predictions/test__LGB-H3__initial.parquet": "2bdc4e004502d775711d3a506cd2939c02347a89cf4ec592246ed87cd475d39e",
+        "models/dev_F1__LR2__initial.joblib": "1d7505a8e6c6c28b282523abaf7cb988fdc8b4ee37f892eaf6df294722437310",
+        "models/original_train__LR2__initial.joblib": "071e49c04675ea13327065a91196d7a7dfd53289e583bb161e813d7d9459aa44",
+        "models/dev_F2__LGB-H2__initial.joblib": "edcade90504a6cc8d7300a95110f5b34a23850271fca5c429fd9b858f630b87b",
+        "models/dev_F1__LGB-H3__initial.joblib": "262f8859051b1997417d38661f77d2e25761dd0127e2520567c1de187a8dc6f5",
+        "models/dev_F2__LR0__initial.joblib": "fc02a90b42be2757e1f34876140f18764c3b89428229bfbdfa6e53dc02117101",
+        "models/original_train__LGB-H1__initial.joblib": "c967d3ac804c4d8263c92a534eded4dd1e3f4f9c2ef02a3f0d67e3e0110800d6",
+        "models/dev_F2__LR1__initial.joblib": "eb3781171541694888e3786373ef87c0d841648ca6eb531efcf0a52302e9a61e",
+        "models/original_train__LGB-H0__initial.joblib": "d09a01700a2b14e3e22c1a85e19e084dc9a02bfc6b37d8f42d21f611a7f8b27b",
+        "models/dev_F2__LGB-H3__initial.joblib": "37e69ff390a91189f6738187c41a3fb77d4ccbe97d59fe55ffd611c0a4c63586",
+        "models/dev_F1__LGB-H2__initial.joblib": "26fa1e802a398582da338467b26445aba756f9a8e2b93489e7f44d9b96d2c800",
+        "models/original_train__LGB-H2__initial.joblib": "ffd41fefba53221b54b1a73fc8c8eba6b50030ed733272e6a6519b1dc86da29f",
+        "models/dev_F2__LGB-H1__initial.joblib": "40ba941d8e5f0bf60e1dc53a1091e9a6257ae9c83a3a0172199db82012733035",
+        "models/original_train__LR1__initial.joblib": "78c7b18582d82863e0b23c54dae61e43f920549c18ff8143bce0d9762ba635c1",
+        "models/dev_F1__LR1__initial.joblib": "bf796bf0140173514db66d34dc884b7559d0095b1fd18503386768331db68397",
+        "models/dev_F1__LGB-H0__initial.joblib": "eb3e65e823c708771157b96fa3b5b6ef841ff37aa15e20294970431577e61acf",
+        "models/dev_F2__LGB-H0__initial.joblib": "5ff1ffd6de2691020e4f0dfc66c0eceffb181fbb6e58fb262bb92531e9022ca9",
+        "models/dev_F1__LR0__initial.joblib": "b6c70e150e45674a0a1e415ed9414ae7b0786aae0b45a2d273065faf3eafcf2b",
+        "models/original_train__LR0__initial.joblib": "eb5d21639f294831774d8f4528aeff059993c1e8a4b679170196e2232547cc17",
+        "models/dev_F1__LGB-H1__initial.joblib": "6c03b4bc87a0fd18f818799224b3d6d3b98f9b21154c0cafcfa0c0aa606af1fd",
+        "models/original_train__LGB-H3__initial.joblib": "1763726a5cbb59a74a357bdb08c9f8430ec11b9d683c9caf5905461454a0dc8a",
+        "models/dev_F2__LR2__initial.joblib": "43addd50bcb30737a4b1e5ce1803571c5d749212a09ce166132b2f9049b6541b"
+      },
+      "verification_code_sha256": "8790549d77414af0b370f592748aea3fef332795d243a48dd873030a53a7e15e",
+      "analysis_present": true,
+      "limitations": [
+        "Does not independently retrain models",
+        "Bootstrap coverage and model generalization are not proven by arithmetic checks"
+      ]
+    },
+    "source_sha256": {
+      "run.json": "593e74d102df488c6277d3e74a6f5eab82b0a98d8dabcc4ccba292392559a401",
+      "verification.json": "bb34049ce03d309c812fceab8a420229eb5e51ac730321857119367b3891d9a9",
+      "paired_intervals.json": "f55be4c4776f7f31a148b83b0a0e9ce3a53f0e58b6d57f98b56add2353649ef7"
+    }
+  },
+  "elapsed_seconds": 34.518192082992755
+}

@@ -1,0 +1,22 @@
+{
+  "run_id": "study_20261121_01",
+  "command": [
+    "scripts/plot_results.py",
+    "--run-id",
+    "study_20261121_01"
+  ],
+  "code_sha256": "90d05106cc614a636e7e72a25782e307b82692275c12e43a4761ecacbfc258ab",
+  "inputs_sha256": {
+    "metrics.json": "aac8b2dfae7369f12af7a6a430b733d9f995d889f69b9b99b18500fabcb65618",
+    "paired_intervals.json": "b4060aede7f62991f8fbac7efe8f825496481ed8b653b14bfaa5e0971605dcc4",
+    "weekly_metrics.csv": "4434ab7ed88df9b45f339d3fa0692272830857c76da3d014b0a3d01669acfe6c"
+  },
+  "outputs_sha256": {
+    "budget_precision.pdf": "66479547e883e61e0706af9789a1f5a164f092bfccf9699b6a5c4b9c8484f1a5",
+    "budget_precision.png": "0cdece93eb64452c5d654ccdc2ce84e10c94c7d3f4c9d66df5bd0394160626bb",
+    "primary_intervals.pdf": "f1a804bcd4f7d552dbbf3cd3836748313f150bb979a2f8a1fe117a20eec84992",
+    "primary_intervals.png": "314eeec1f09577534da2a7b2d1712c9c3100e292188460053fa6cf76129ac636",
+    "weekly_daily16.pdf": "bde8a5b9b4d34c415b9d82e0be67843640164762971826bfe765842547d78782",
+    "weekly_daily16.png": "89cb7f8d2e42abaf142aac852d5ec396dc45741c34ce47183d1735be428d2999"
+  }
+}

@@ -1,0 +1,292 @@
+{
+  "validation": {
+    "legacy_LR": {
+      "probability": {
+        "100": {
+          "pr_auc": 0.3997245940140894,
+          "k": 100,
+          "precision_at_k": 1.0,
+          "recall_at_k": 0.03287310979618672,
+          "hits_at_k": 100
+        },
+        "500": {
+          "pr_auc": 0.3997245940140894,
+          "k": 500,
+          "precision_at_k": 0.86,
+          "recall_at_k": 0.14135437212360288,
+          "hits_at_k": 430
+        }
+      },
+      "margin": {
+        "100": {
+          "pr_auc": 0.3997245940140893,
+          "k": 100,
+          "precision_at_k": 1.0,
+          "recall_at_k": 0.03287310979618672,
+          "hits_at_k": 100
+        },
+        "500": {
+          "pr_auc": 0.3997245940140893,
+          "k": 500,
+          "precision_at_k": 0.86,
+          "recall_at_k": 0.14135437212360288,
+          "hits_at_k": 430
+        }
+      },
+      "exact_probability_one": 18,
+      "exact_probability_zero": 0,
+      "converged": true
+    },
+    "random": {
+      "100": {
+        "pr_auc": 0.03384620723796255,
+        "k": 100,
+        "precision_at_k": 0.04,
+        "recall_at_k": 0.0013149243918474688,
+        "hits_at_k": 4
+      },
+      "500": {
+        "pr_auc": 0.03384620723796255,
+        "k": 500,
+        "precision_at_k": 0.036,
+        "recall_at_k": 0.005917159763313609,
+        "hits_at_k": 18
+      }
+    },
+    "amount_descending": {
+      "100": {
+        "pr_auc": 0.04035734250236736,
+        "k": 100,
+        "precision_at_k": 0.06,
+        "recall_at_k": 0.0019723865877712033,
+        "hits_at_k": 6
+      },
+      "500": {
+        "pr_auc": 0.04035734250236736,
+        "k": 500,
+        "precision_at_k": 0.03,
+        "recall_at_k": 0.004930966469428008,
+        "hits_at_k": 15
+      }
+    },
+    "legacy_LGB": {
+      "probability": {
+        "100": {
+          "pr_auc": 0.5231117215097005,
+          "k": 100,
+          "precision_at_k": 1.0,
+          "recall_at_k": 0.03287310979618672,
+          "hits_at_k": 100
+        },
+        "500": {
+          "pr_auc": 0.5231117215097005,
+          "k": 500,
+          "precision_at_k": 0.936,
+          "recall_at_k": 0.15384615384615385,
+          "hits_at_k": 468
+        }
+      },
+      "margin": {
+        "100": {
+          "pr_auc": 0.5231117215097005,
+          "k": 100,
+          "precision_at_k": 1.0,
+          "recall_at_k": 0.03287310979618672,
+          "hits_at_k": 100
+        },
+        "500": {
+          "pr_auc": 0.5231117215097005,
+          "k": 500,
+          "precision_at_k": 0.936,
+          "recall_at_k": 0.15384615384615385,
+          "hits_at_k": 468
+        }
+      },
+      "exact_probability_one": 0,
+      "exact_probability_zero": 0,
+      "converged": true
+    },
+    "legacy_history": {
+      "probability": {
+        "100": {
+          "pr_auc": 0.523541209992606,
+          "k": 100,
+          "precision_at_k": 0.98,
+          "recall_at_k": 0.032215647600262985,
+          "hits_at_k": 98
+        },
+        "500": {
+          "pr_auc": 0.523541209992606,
+          "k": 500,
+          "precision_at_k": 0.95,
+          "recall_at_k": 0.15614727153188693,
+          "hits_at_k": 475
+        }
+      },
+      "margin": {
+        "100": {
+          "pr_auc": 0.523541209992606,
+          "k": 100,
+          "precision_at_k": 0.98,
+          "recall_at_k": 0.032215647600262985,
+          "hits_at_k": 98
+        },
+        "500": {
+          "pr_auc": 0.523541209992606,
+          "k": 500,
+          "precision_at_k": 0.95,
+          "recall_at_k": 0.15614727153188693,
+          "hits_at_k": 475
+        }
+      },
+      "exact_probability_one": 0,
+      "exact_probability_zero": 0,
+      "converged": true
+    }
+  },
+  "test": {
+    "legacy_LR": {
+      "probability": {
+        "100": {
+          "pr_auc": 0.17805117403627532,
+          "k": 100,
+          "precision_at_k": 0.06,
+          "recall_at_k": 0.0019461563412260785,
+          "hits_at_k": 6
+        },
+        "500": {
+          "pr_auc": 0.17805117403627532,
+          "k": 500,
+          "precision_at_k": 0.012,
+          "recall_at_k": 0.0019461563412260785,
+          "hits_at_k": 6
+        }
+      },
+      "margin": {
+        "100": {
+          "pr_auc": 0.1779867971378819,
+          "k": 100,
+          "precision_at_k": 0.0,
+          "recall_at_k": 0.0,
+          "hits_at_k": 0
+        },
+        "500": {
+          "pr_auc": 0.1779867971378819,
+          "k": 500,
+          "precision_at_k": 0.0,
+          "recall_at_k": 0.0,
+          "hits_at_k": 0
+        }
+      },
+      "exact_probability_one": 918,
+      "exact_probability_zero": 0,
+      "converged": true
+    },
+    "random": {
+      "100": {
+        "pr_auc": 0.035292215498248805,
+        "k": 100,
+        "precision_at_k": 0.01,
+        "recall_at_k": 0.0003243593902043464,
+        "hits_at_k": 1
+      },
+      "500": {
+        "pr_auc": 0.035292215498248805,
+        "k": 500,
+        "precision_at_k": 0.026,
+        "recall_at_k": 0.0042166720726565035,
+        "hits_at_k": 13
+      }
+    },
+    "amount_descending": {
+      "100": {
+        "pr_auc": 0.03712227931551147,
+        "k": 100,
+        "precision_at_k": 0.02,
+        "recall_at_k": 0.0006487187804086928,
+        "hits_at_k": 2
+      },
+      "500": {
+        "pr_auc": 0.03712227931551147,
+        "k": 500,
+        "precision_at_k": 0.02,
+        "recall_at_k": 0.003243593902043464,
+        "hits_at_k": 10
+      }
+    },
+    "legacy_LGB": {
+      "probability": {
+        "100": {
+          "pr_auc": 0.49957298427606156,
+          "k": 100,
+          "precision_at_k": 0.95,
+          "recall_at_k": 0.03081414206941291,
+          "hits_at_k": 95
+        },
+        "500": {
+          "pr_auc": 0.49957298427606156,
+          "k": 500,
+          "precision_at_k": 0.93,
+          "recall_at_k": 0.1508271164450211,
+          "hits_at_k": 465
+        }
+      },
+      "margin": {
+        "100": {
+          "pr_auc": 0.49957298427606156,
+          "k": 100,
+          "precision_at_k": 0.95,
+          "recall_at_k": 0.03081414206941291,
+          "hits_at_k": 95
+        },
+        "500": {
+          "pr_auc": 0.49957298427606156,
+          "k": 500,
+          "precision_at_k": 0.93,
+          "recall_at_k": 0.1508271164450211,
+          "hits_at_k": 465
+        }
+      },
+      "exact_probability_one": 0,
+      "exact_probability_zero": 0,
+      "converged": true
+    },
+    "legacy_history": {
+      "probability": {
+        "100": {
+          "pr_auc": 0.49787859353763836,
+          "k": 100,
+          "precision_at_k": 0.97,
+          "recall_at_k": 0.031462860849821604,
+          "hits_at_k": 97
+        },
+        "500": {
+          "pr_auc": 0.49787859353763836,
+          "k": 500,
+          "precision_at_k": 0.912,
+          "recall_at_k": 0.14790788193318197,
+          "hits_at_k": 456
+        }
+      },
+      "margin": {
+        "100": {
+          "pr_auc": 0.49787859353763836,
+          "k": 100,
+          "precision_at_k": 0.97,
+          "recall_at_k": 0.031462860849821604,
+          "hits_at_k": 97
+        },
+        "500": {
+          "pr_auc": 0.49787859353763836,
+          "k": 500,
+          "precision_at_k": 0.912,
+          "recall_at_k": 0.14790788193318197,
+          "hits_at_k": 456
+        }
+      },
+      "exact_probability_one": 0,
+      "exact_probability_zero": 0,
+      "converged": true
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "created_on": "2026-11-21",
+  "description": "来源快照与哈希，不证明原模型已经重新运行",
+  "files": [
+    {
+      "source": "../FraudML-main/artifacts/validation_base.json",
+      "sha256": "25298a53532dfa7054138f4bfc7c693617090f806a2205e8dd1fa96db246921f",
+      "bytes": 2635,
+      "snapshot": "evidence/legacy_metrics/validation_base.json"
+    },
+    {
+      "source": "../FraudML-main/artifacts/validation_history.json",
+      "sha256": "fc52500189a9492f01104f6acea5799293af52489bc441ac5d01d52cb15d1f33",
+      "bytes": 1322,
+      "snapshot": "evidence/legacy_metrics/validation_history.json"
+    },
+    {
+      "source": "../FraudML-main/artifacts/final_metrics.json",
+      "sha256": "20b7234c107bee4ee39ac936f2519bb48721fa65b824c743baf86318642672e5",
+      "bytes": 2629,
+      "snapshot": "evidence/legacy_metrics/final_metrics.json"
+    },
+    {
+      "source": "../FraudML-main/artifacts/final_history_metrics.json",
+      "sha256": "aef77abdd21c7efe0f2c2133312af0748f7236d49747f9f5b4d2fec0d35c0117",
+      "bytes": 1317,
+      "snapshot": "evidence/legacy_metrics/final_history_metrics.json"
+    },
+    {
+      "source": "../FraudML-main/fraudml/data.py",
+      "sha256": "e5f3046c8c9c5cc23fad4994c5be34f1aa8aa15585f32a9b10d3e2d953b6a101",
+      "bytes": 4159
+    },
+    {
+      "source": "../FraudML-main/fraudml/features.py",
+      "sha256": "a469836edb8dd3880f737e90f570e95e840e682a24b4f30f6a5b129d0b9eff22",
+      "bytes": 6569
+    },
+    {
+      "source": "../FraudML-main/fraudml/models/tabular.py",
+      "sha256": "7b6fc3dcf44ff8bf954faafb089dc9b0b9b04977a6b1e9edb4babb0a8b2c31c0",
+      "bytes": 1946
+    },
+    {
+      "source": "../FraudML-main/scripts/rolling_windows.py",
+      "sha256": "3896af13efe86e288d252028440a4a04501a5efae3403d46c610a6589936872b",
+      "bytes": 4636
+    },
+    {
+      "source": "../FraudML-main/docs/experiments.md",
+      "sha256": "0c6cdd1121ce5058aa4fabf60f22c56a356768dfa33fce0ae89ec206374801fc",
+      "bytes": 5837
+    },
+    {
+      "source": "../FraudML-main/docs/final_report.md",
+      "sha256": "ef618577e261651d4c2e9dadc944198c3bc54be25d7498260ec5c5efd720be17",
+      "bytes": 12722
+    },
+    {
+      "source": "../FraudML-main/requirements-tested.txt",
+      "sha256": "6871a61f5847666781451f4631601fc5ee847a25a816a62d64a8d0cfddf02289",
+      "bytes": 264
+    },
+    {
+      "source": "../FraudML-main/outputs/FraudML_Main_Reports/Team-FraudML-Main-Report.docx",
+      "sha256": "3fdc5cd2fe76b12568d616986c57a2070fe0df1a9e694622a0d210da3d7cc635",
+      "bytes": 286943
+    }
+  ]
+}

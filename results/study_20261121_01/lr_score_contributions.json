@@ -1,0 +1,389 @@
+{
+  "run_id": "study_20261121_01",
+  "analysis_type": "post_hoc_descriptive_no_tuning",
+  "code_sha256": "0726e43368c1d8ec83bd6a3bab38a8f85eb0e761667f56d30b320140d38077b0",
+  "inputs_sha256": {
+    "predictions/test__LR0__initial.parquet": "227c3ab3891e54f75a552fc515c15d8414f66c5bc6b005fd860bfc23d0c2689b",
+    "models/original_train__LR0__initial.joblib": "15548dc538fd71afe2dec7c22de8461a02c5f85310130aa59e25930ee8aac778",
+    "predictions/test__LR1__initial.parquet": "b3ef78dc307cdc152c284efd0a37415a027321fc618034d1df0e418d57721e19",
+    "models/original_train__LR1__initial.joblib": "c6d5790ad96471f98766cad4db4f2825d4a7c2f9ed1eab1ce588346437f0dc6a",
+    "predictions/test__LR2__initial.parquet": "c54cf56fa479b98994d5e284ab269504815df639733db8ead4c6d0d92f44d5b3",
+    "models/original_train__LR2__initial.joblib": "96592f7b354f635aba97af2b588df4eeab735850571522589bf8fda82a987e5c"
+  },
+  "test_top_primary_budget": {
+    "LR0": {
+      "reviews": 443,
+      "hits": 0,
+      "converged": true,
+      "intercept": -0.15941035688525143,
+      "max_margin_reconstruction_error": 6.821210263296962e-13,
+      "margin_quantiles": [
+        221.28420498355857,
+        297.8730303196568,
+        405.75545512463657
+      ],
+      "top_features_by_absolute_mean_contribution": [
+        {
+          "feature": "num__V323",
+          "coefficient": 0.8509449998179375,
+          "mean_margin_contribution": 796.5365874737039,
+          "median_transformed_value": 936.05400021703,
+          "max_absolute_transformed_value": 1115.165195695077,
+          "min_contribution": 646.82627308442,
+          "max_contribution": 948.9442472477175
+        },
+        {
+          "feature": "num__V332",
+          "coefficient": -1.4118662463332925,
+          "mean_margin_contribution": -610.8636727757548,
+          "median_transformed_value": 431.94281777075474,
+          "max_absolute_transformed_value": 509.74481480460076,
+          "min_contribution": -719.691498266031,
+          "max_contribution": -494.96560329586663
+        },
+        {
+          "feature": "num__V324",
+          "coefficient": -0.4744715704238581,
+          "mean_margin_contribution": -584.4517572445133,
+          "median_transformed_value": 1235.804249822114,
+          "max_absolute_transformed_value": 1550.3465145009593,
+          "min_contribution": -735.5953454364249,
+          "max_contribution": -8.2321403515315
+        },
+        {
+          "feature": "num__V177",
+          "coefficient": -0.5175911424767441,
+          "mean_margin_contribution": -451.9287313159919,
+          "median_transformed_value": 885.2011025878885,
+          "max_absolute_transformed_value": 1142.6993433984458,
+          "min_contribution": -591.4510586570269,
+          "max_contribution": 0.05953023457439557
+        },
+        {
+          "feature": "num__V179",
+          "coefficient": 0.8780411718085951,
+          "mean_margin_contribution": 397.540147438505,
+          "median_transformed_value": 456.49303130633496,
+          "max_absolute_transformed_value": 578.4990238153157,
+          "min_contribution": -0.07559521760581801,
+          "max_contribution": 507.94596076092813
+        },
+        {
+          "feature": "num__V333",
+          "coefficient": 1.1062967990189305,
+          "mean_margin_contribution": 373.2409475225008,
+          "median_transformed_value": 337.76387391389204,
+          "max_absolute_transformed_value": 414.36039833714915,
+          "min_contribution": 4.195936669557856,
+          "max_contribution": 458.4055823205971
+        },
+        {
+          "feature": "num__V322",
+          "coefficient": 0.2574009882461129,
+          "mean_margin_contribution": 362.82443336937786,
+          "median_transformed_value": 1417.3476536189978,
+          "max_absolute_transformed_value": 1828.8697994897311,
+          "min_contribution": -0.03024860359622992,
+          "max_contribution": 470.75289376212714
+        },
+        {
+          "feature": "num__V168",
+          "coefficient": -1.7522841714252242,
+          "mean_margin_contribution": -294.55640939933465,
+          "median_transformed_value": 169.32002124664157,
+          "max_absolute_transformed_value": 214.50581437917265,
+          "min_contribution": -375.8751432153015,
+          "max_contribution": 0.12450937863608916
+        },
+        {
+          "feature": "num__V95",
+          "coefficient": 0.33396208360666746,
+          "mean_margin_contribution": 290.20181140503144,
+          "median_transformed_value": 873.762916253928,
+          "max_absolute_transformed_value": 1127.5182761341234,
+          "min_contribution": -0.09461925076071018,
+          "max_contribution": 376.5483528023497
+        },
+        {
+          "feature": "num__V101",
+          "coefficient": -0.19513344964652546,
+          "mean_margin_contribution": -232.94920247591185,
+          "median_transformed_value": 1200.178676364742,
+          "max_absolute_transformed_value": 1554.383637062247,
+          "min_contribution": -303.3122411740691,
+          "max_contribution": 0.035627334957256236
+        },
+        {
+          "feature": "num__V167",
+          "coefficient": 0.4257216756399524,
+          "mean_margin_contribution": 228.61874210361125,
+          "median_transformed_value": 543.6910666497548,
+          "max_absolute_transformed_value": 700.3312786157859,
+          "min_contribution": -0.05603262306209695,
+          "max_contribution": 298.14620543538274
+        },
+        {
+          "feature": "num__V203",
+          "coefficient": -2.234020103810645,
+          "mean_margin_contribution": -103.02260201409672,
+          "median_transformed_value": 46.2235439778533,
+          "max_absolute_transformed_value": 55.027756587598006,
+          "min_contribution": -122.9331144842926,
+          "max_contribution": 0.10571809106819724
+        }
+      ],
+      "clipped_cells_in_selected_rows": 0
+    },
+    "LR1": {
+      "reviews": 443,
+      "hits": 376,
+      "converged": true,
+      "intercept": -0.14690450266530297,
+      "max_margin_reconstruction_error": 5.3290705182007514e-14,
+      "margin_quantiles": [
+        6.676277584037494,
+        10.482886981942379,
+        58.34095696295141
+      ],
+      "top_features_by_absolute_mean_contribution": [
+        {
+          "feature": "num__V167",
+          "coefficient": 1.6308557917817585,
+          "mean_margin_contribution": 9.22552481284147,
+          "median_transformed_value": 3.2413637659801124,
+          "max_absolute_transformed_value": 31.11204777779211,
+          "min_contribution": -0.2232657279595403,
+          "max_contribution": 50.73926331260305
+        },
+        {
+          "feature": "num__V217",
+          "coefficient": -1.2347645798239688,
+          "mean_margin_contribution": -8.654763844347498,
+          "median_transformed_value": 5.569378092892673,
+          "max_absolute_transformed_value": 22.77782441347741,
+          "min_contribution": -28.125250791211574,
+          "max_contribution": 0.2059225294019405
+        },
+        {
+          "feature": "num__V177",
+          "coefficient": -1.1057143393525728,
+          "mean_margin_contribution": -6.745015601620444,
+          "median_transformed_value": 2.8308224058611393,
+          "max_absolute_transformed_value": 26.476684103502205,
+          "min_contribution": -29.275649271750705,
+          "max_contribution": 0.13811511685747685
+        },
+        {
+          "feature": "num__V189",
+          "coefficient": 0.5679261668139707,
+          "mean_margin_contribution": 5.716409751449764,
+          "median_transformed_value": 6.206324604000725,
+          "max_absolute_transformed_value": 31.118162213689583,
+          "min_contribution": -1.780797523382647,
+          "max_contribution": 17.67281858431607
+        },
+        {
+          "feature": "num__C11",
+          "coefficient": 8.009156554134393,
+          "mean_margin_contribution": 5.521217708347432,
+          "median_transformed_value": -0.06196714826381663,
+          "max_absolute_transformed_value": 11.886216095034005,
+          "min_contribution": -0.8223518493517165,
+          "max_contribution": 95.1985655413993
+        },
+        {
+          "feature": "num__V231",
+          "coefficient": 0.7899248142374284,
+          "mean_margin_contribution": 5.10609398038774,
+          "median_transformed_value": 4.240765433344285,
+          "max_absolute_transformed_value": 26.06286555265976,
+          "min_contribution": -0.09767782944517613,
+          "max_contribution": 20.58770423017983
+        },
+        {
+          "feature": "num__C14",
+          "coefficient": -6.75428261743348,
+          "mean_margin_contribution": -3.781786732508611,
+          "median_transformed_value": -0.12974464193430135,
+          "max_absolute_transformed_value": 15.151035751894767,
+          "min_contribution": -102.33437741513603,
+          "max_contribution": 1.143371331325755
+        },
+        {
+          "feature": "num__V200",
+          "coefficient": 0.3860084626497112,
+          "mean_margin_contribution": 3.718497325903792,
+          "median_transformed_value": 7.214474919972732,
+          "max_absolute_transformed_value": 29.032264801332772,
+          "min_contribution": -0.9581967519911893,
+          "max_contribution": 11.206699903201788
+        },
+        {
+          "feature": "num__V168",
+          "coefficient": -1.715764170208801,
+          "mean_margin_contribution": -3.6532067515508766,
+          "median_transformed_value": 1.0987270024067906,
+          "max_absolute_transformed_value": 10.711720758601462,
+          "min_contribution": -18.378786678890226,
+          "max_contribution": 0.12626190024898984
+        },
+        {
+          "feature": "num__V188",
+          "coefficient": -0.37492346903101836,
+          "mean_margin_contribution": -3.5437978406508868,
+          "median_transformed_value": 8.098508489145408,
+          "max_absolute_transformed_value": 24.304503141079458,
+          "min_contribution": -9.112328630728793,
+          "max_contribution": 1.520684903773386
+        },
+        {
+          "feature": "num__V201",
+          "coefficient": -0.3710147219132603,
+          "mean_margin_contribution": -3.535240260372578,
+          "median_transformed_value": 5.962931098967358,
+          "max_absolute_transformed_value": 28.0689935469362,
+          "min_contribution": -10.41400983520163,
+          "max_contribution": 0.7700919080669942
+        },
+        {
+          "feature": "num__V179",
+          "coefficient": 0.7377287747335346,
+          "mean_margin_contribution": 3.2100519528476834,
+          "median_transformed_value": 1.8886066622983109,
+          "max_absolute_transformed_value": 28.256142043708206,
+          "min_contribution": -0.06562723879437503,
+          "max_contribution": 20.845369048601565
+        }
+      ],
+      "clipped_cells_in_selected_rows": 2990
+    },
+    "LR2": {
+      "reviews": 443,
+      "hits": 383,
+      "converged": true,
+      "intercept": -0.12215895626033492,
+      "max_margin_reconstruction_error": 5.684341886080802e-14,
+      "margin_quantiles": [
+        6.4375184779598404,
+        10.098646674475876,
+        50.28005740590312
+      ],
+      "top_features_by_absolute_mean_contribution": [
+        {
+          "feature": "num__V167",
+          "coefficient": 1.068296619318446,
+          "mean_margin_contribution": 5.886381665772049,
+          "median_transformed_value": 3.2413637659801124,
+          "max_absolute_transformed_value": 31.11204777779211,
+          "min_contribution": -0.14625083565988692,
+          "max_contribution": 33.23689546108928
+        },
+        {
+          "feature": "num__V217",
+          "coefficient": -0.8665551219262885,
+          "mean_margin_contribution": -5.844996070048447,
+          "median_transformed_value": 5.569378092892673,
+          "max_absolute_transformed_value": 22.77782441347741,
+          "min_contribution": -19.738240411836507,
+          "max_contribution": 0.14451598749188901
+        },
+        {
+          "feature": "num__V189",
+          "coefficient": 0.5395819370349346,
+          "mean_margin_contribution": 5.5373141818559946,
+          "median_transformed_value": 6.206324604000725,
+          "max_absolute_transformed_value": 31.118162213689583,
+          "min_contribution": -1.6919209455065836,
+          "max_contribution": 16.790798244229933
+        },
+        {
+          "feature": "num__V177",
+          "coefficient": -0.7964740877333795,
+          "mean_margin_contribution": -4.7656083717792885,
+          "median_transformed_value": 2.8308224058611393,
+          "max_absolute_transformed_value": 26.476684103502205,
+          "min_contribution": -21.08799281754179,
+          "max_contribution": 0.09948782229382962
+        },
+        {
+          "feature": "num__V200",
+          "coefficient": 0.3655104340565224,
+          "mean_margin_contribution": 3.5850407400391804,
+          "median_transformed_value": 7.214474919972732,
+          "max_absolute_transformed_value": 29.032264801332772,
+          "min_contribution": -0.9073140737063877,
+          "max_contribution": 10.611595709179038
+        },
+        {
+          "feature": "num__V201",
+          "coefficient": -0.3489459127032385,
+          "mean_margin_contribution": -3.3835259822018706,
+          "median_transformed_value": 5.962931098967358,
+          "max_absolute_transformed_value": 28.0689935469362,
+          "min_contribution": -9.794560571896962,
+          "max_contribution": 0.7242850697138644
+        },
+        {
+          "feature": "num__V188",
+          "coefficient": -0.3480892983786488,
+          "mean_margin_contribution": -3.3665633528901346,
+          "median_transformed_value": 8.098508489145408,
+          "max_absolute_transformed_value": 24.304503141079458,
+          "min_contribution": -8.460137445820015,
+          "max_contribution": 1.4118458430397376
+        },
+        {
+          "feature": "num__V231",
+          "coefficient": 0.5479981770469922,
+          "mean_margin_contribution": 3.3641117548933988,
+          "median_transformed_value": 4.240765433344285,
+          "max_absolute_transformed_value": 26.06286555265976,
+          "min_contribution": -0.06776249018780006,
+          "max_contribution": 14.282402811478395
+        },
+        {
+          "feature": "num__C11",
+          "coefficient": 4.8597012373934705,
+          "mean_margin_contribution": 3.0502204380431768,
+          "median_transformed_value": -0.06196714826381663,
+          "max_absolute_transformed_value": 11.886216095034005,
+          "min_contribution": -0.4989769238315586,
+          "max_contribution": 57.76345906496294
+        },
+        {
+          "feature": "num__V168",
+          "coefficient": -1.2560402568094144,
+          "mean_margin_contribution": -2.6112085260733755,
+          "median_transformed_value": 1.0987270024067906,
+          "max_absolute_transformed_value": 10.711720758601462,
+          "min_contribution": -13.454352492504515,
+          "max_contribution": 0.09243113498207983
+        },
+        {
+          "feature": "num__V199",
+          "coefficient": 0.40984114462603927,
+          "mean_margin_contribution": 2.5148350751660713,
+          "median_transformed_value": 3.5540220130782183,
+          "max_absolute_transformed_value": 35.05891856095078,
+          "min_contribution": -0.033262034269079976,
+          "max_contribution": 14.368587312371162
+        },
+        {
+          "feature": "num__C14",
+          "coefficient": -5.212808432993208,
+          "mean_margin_contribution": -2.509534396014916,
+          "median_transformed_value": -0.12974464193430135,
+          "max_absolute_transformed_value": 15.151035751894767,
+          "min_contribution": -78.97944693605864,
+          "max_contribution": 0.8824291276461775
+        }
+      ],
+      "clipped_cells_in_selected_rows": 2577
+    }
+  },
+  "limitations": [
+    "Contributions describe the fitted linear score, not causal effects",
+    "Correlated anonymous features limit mechanistic interpretation",
+    "No further models, thresholds or hyperparameters were chosen from this diagnostic"
+  ]
+}

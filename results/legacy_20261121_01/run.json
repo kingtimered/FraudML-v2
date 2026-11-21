@@ -1,0 +1,143 @@
+{
+  "run_id": "legacy_20261121_01",
+  "kind": "legacy_replay",
+  "status": "executed",
+  "completed_fits": [
+    {
+      "name": "legacy_LR",
+      "family": "logistic",
+      "history": false,
+      "seconds": 123.16367249999894,
+      "converged": true,
+      "warnings": [
+        {
+          "category": "DeprecationWarning",
+          "message": "scipy.optimize: The `disp` and `iprint` options of the L-BFGS-B solver are deprecated and will be removed in SciPy 1.18.0."
+        }
+      ],
+      "parameters": {
+        "C": 1.0,
+        "class_weight": "balanced",
+        "dual": false,
+        "fit_intercept": true,
+        "intercept_scaling": 1,
+        "l1_ratio": null,
+        "max_iter": 1000,
+        "multi_class": "deprecated",
+        "n_jobs": null,
+        "penalty": "l2",
+        "random_state": 42,
+        "solver": "lbfgs",
+        "tol": 0.0001,
+        "verbose": 0,
+        "warm_start": false
+      },
+      "iterations": [
+        572
+      ]
+    },
+    {
+      "name": "legacy_LGB",
+      "family": "lightgbm",
+      "history": false,
+      "seconds": 23.514074042002903,
+      "converged": true,
+      "warnings": [],
+      "parameters": {
+        "boosting_type": "gbdt",
+        "class_weight": "balanced",
+        "colsample_bytree": 1.0,
+        "importance_type": "split",
+        "learning_rate": 0.05,
+        "max_depth": -1,
+        "min_child_samples": 20,
+        "min_child_weight": 0.001,
+        "min_split_gain": 0.0,
+        "n_estimators": 300,
+        "n_jobs": 2,
+        "num_leaves": 31,
+        "objective": null,
+        "random_state": 42,
+        "reg_alpha": 0.0,
+        "reg_lambda": 0.0,
+        "subsample": 1.0,
+        "subsample_for_bin": 200000,
+        "subsample_freq": 0,
+        "verbosity": -1
+      },
+      "iterations": 300
+    },
+    {
+      "name": "legacy_history",
+      "family": "lightgbm",
+      "history": true,
+      "seconds": 22.329147207987262,
+      "converged": true,
+      "warnings": [],
+      "parameters": {
+        "boosting_type": "gbdt",
+        "class_weight": "balanced",
+        "colsample_bytree": 1.0,
+        "importance_type": "split",
+        "learning_rate": 0.05,
+        "max_depth": -1,
+        "min_child_samples": 20,
+        "min_child_weight": 0.001,
+        "min_split_gain": 0.0,
+        "n_estimators": 300,
+        "n_jobs": 2,
+        "num_leaves": 31,
+        "objective": null,
+        "random_state": 42,
+        "reg_alpha": 0.0,
+        "reg_lambda": 0.0,
+        "subsample": 1.0,
+        "subsample_for_bin": 200000,
+        "subsample_freq": 0,
+        "verbosity": -1
+      },
+      "iterations": 300
+    }
+  ],
+  "data_sha256": "3a5c83ab6b3cc13dcabe5ffa9f522307fd5f7f7b6e6f6a60c32284ca6283d642",
+  "source_sha256": {
+    "FraudML-main/fraudml/data.py": "e5f3046c8c9c5cc23fad4994c5be34f1aa8aa15585f32a9b10d3e2d953b6a101",
+    "FraudML-main/fraudml/features.py": "a469836edb8dd3880f737e90f570e95e840e682a24b4f30f6a5b129d0b9eff22",
+    "FraudML-main/fraudml/metrics.py": "925ceda22fefca821fa9e7399d34bcddeb8ecb24381a68cc36591ba554b352cb",
+    "FraudML-main/fraudml/decision.py": "3ea8c3f637e7ddc99efdf6538aae9d1b390b78393594b3d165818fd21a5a5f1d",
+    "FraudML-main/fraudml/models/tabular.py": "7b6fc3dcf44ff8bf954faafb089dc9b0b9b04977a6b1e9edb4babb0a8b2c31c0"
+  },
+  "replay_code_sha256": "4ade403cdbbfbc8e1debc331c4a1dcc5a9198fd86b5391156e2c5ec98bb82c1d",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.16.3",
+    "scikit-learn": "1.6.1",
+    "lightgbm": "4.6.0",
+    "joblib": "1.5.3"
+  },
+  "execution_differences": [
+    "Current recorded Python/numpy/pandas/scipy environment; original run lockfile is unavailable",
+    "LightGBM n_jobs=2 for bounded resource use; original did not specify thread count",
+    "Single original training snapshot scores both original validation and test"
+  ],
+  "analysis_type": "retrospective",
+  "elapsed_seconds": 200.197992040994,
+  "all_archived_metrics_match": false,
+  "artifact_sha256": {
+    "archived_comparison.csv": "01eca5cb24c6a0066fde16f3ce307be5648a13f9b8917cf55c5a6a168673fa64",
+    "archived_comparison.json": "de40e69c934b3d59e35bab0bda286a637489eb0e1a9f79044eedb1b47f8a1fb7",
+    "metrics.json": "84a18961cd469ef7c803b422d21363cdb675821bba94c88e7fbf487b9cc26a74",
+    "models/legacy_LGB.joblib": "19835078e61b56c8adb4d67eaa397c881184863cdd9c0f5d1972c183f94f9946",
+    "models/legacy_LR.joblib": "8746d8e11f905ef422b7423c4cc59d6bcec62fc11f94c97be24caa130f85a088",
+    "models/legacy_history.joblib": "55acf8795c27eab4e6af37b013157eda53d980202c3539aac3878501f822dd4f",
+    "predictions/test__legacy_LGB.parquet": "0355c0d83fcd176388242feafa5764a2cb23a13bb796bca5a6539e02d74ff479",
+    "predictions/test__legacy_LR.parquet": "76782e954be48f902b4fe9ec4af67f9b9398f4bfbddf2db2aa81417a756c67f1",
+    "predictions/test__legacy_history.parquet": "2f6d93d00ab3e3bf04c57382bf400d09a793be14e942fe7c7a8c6d04428ee12f",
+    "predictions/validation__legacy_LGB.parquet": "666d82d8675fcfc63d65836534c7d2c79e5da88fd5182b38dfc0724bf840b4d1",
+    "predictions/validation__legacy_LR.parquet": "0ec3769729829905e2aa956494a2498b7efd5ba5aef5d6b2ed11fe49462458ee",
+    "predictions/validation__legacy_history.parquet": "64270ae43bfef29dda1e2ea25e41b739c29b888e38a1a3203732dfd9170a16bd",
+    "training.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

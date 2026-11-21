@@ -1,0 +1,269 @@
+{
+  "schema_version": 1,
+  "protocol_version": "2026-11-21.plan2",
+  "status": "planned",
+  "title": "支付欺诈排序的时间稳定性与特征改进评估",
+  "analysis_type": "retrospective",
+  "training_executed": false,
+  "data": {
+    "transaction": "../ieee-fraud-detection/train_transaction.csv",
+    "identity_audit_only": "../ieee-fraud-detection/train_identity.csv",
+    "legacy_root": "../FraudML-main",
+    "day_seconds": 86400,
+    "identity_modeling": false
+  },
+  "legacy_reports": [
+    "validation_base.json",
+    "validation_history.json",
+    "final_metrics.json",
+    "final_history_metrics.json"
+  ],
+  "development_folds": [
+    {
+      "id": "dev_F1",
+      "train_days": [
+        1,
+        61
+      ],
+      "evaluation_days": [
+        61,
+        89
+      ]
+    },
+    {
+      "id": "dev_F2",
+      "train_days": [
+        1,
+        89
+      ],
+      "evaluation_days": [
+        89,
+        117
+      ]
+    }
+  ],
+  "interval_convention": "left_closed_right_open",
+  "label_gap_days": 0,
+  "label_availability_assumption": "training_labels_available_at_cutoff",
+  "later_snapshot": {
+    "id": "original_train",
+    "bounds_source": "evidence/legacy_metrics/final_metrics.json",
+    "score_periods": [
+      "validation",
+      "test"
+    ],
+    "refit_per_period": false
+  },
+  "preprocessing": {
+    "canonical_integer_codes": [
+      "card1",
+      "addr1"
+    ],
+    "fit_on_train_only": true,
+    "base_encoding": "legacy_train_only_cardinality_32",
+    "clipping": {
+      "quantiles": [
+        0.001,
+        0.999
+      ],
+      "named_columns": [
+        "TransactionAmt",
+        "dist1",
+        "dist2"
+      ],
+      "regex": "^[CDV][0-9]+$"
+    }
+  },
+  "logistic_defaults": {
+    "class_weight": "balanced",
+    "penalty": "l2",
+    "solver": "lbfgs",
+    "max_iter": 1000,
+    "ranking_score": "decision_function"
+  },
+  "lightgbm_defaults": {
+    "n_estimators": 300,
+    "learning_rate": 0.05,
+    "num_leaves": 31,
+    "min_child_samples": 20,
+    "class_weight": "balanced",
+    "n_jobs": 2,
+    "ranking_score": "positive_class_score"
+  },
+  "models": [
+    {
+      "id": "LR0",
+      "family": "logistic",
+      "clipping": false,
+      "C": 1.0
+    },
+    {
+      "id": "LR1",
+      "family": "logistic",
+      "clipping": true,
+      "C": 1.0
+    },
+    {
+      "id": "LR2",
+      "family": "logistic",
+      "clipping": true,
+      "C": 0.1
+    },
+    {
+      "id": "LGB-H0",
+      "family": "lightgbm",
+      "history": "none",
+      "extra_columns": 0
+    },
+    {
+      "id": "LGB-H1",
+      "family": "lightgbm",
+      "history": "legacy_cumulative",
+      "missing_entity": "shared_group",
+      "extra_columns": 4
+    },
+    {
+      "id": "LGB-H2",
+      "family": "lightgbm",
+      "history": "cumulative",
+      "missing_entity": "all_history_missing",
+      "extra_columns": 4
+    },
+    {
+      "id": "LGB-H3",
+      "family": "lightgbm",
+      "history": "cumulative_plus_24h_count_and_elapsed",
+      "missing_entity": "all_history_missing",
+      "extra_columns": 8
+    }
+  ],
+  "history": {
+    "entities": [
+      "card1",
+      "addr1"
+    ],
+    "strictly_past": true,
+    "same_timestamp_update": "after_group",
+    "recent_seconds": 86400,
+    "label_features": false
+  },
+  "budget": {
+    "primary_rate": 0.005,
+    "period_rates": [
+      0.001,
+      0.005,
+      0.01,
+      0.02
+    ],
+    "daily_rate": 0.005,
+    "daily_fixed": [
+      8,
+      16,
+      32
+    ],
+    "rounding": "ceil",
+    "daily_role": "supplementary",
+    "match_total_capacity": true,
+    "drop_endpoint_days_by_default": false
+  },
+  "metrics": {
+    "primary": [
+      "hits",
+      "precision",
+      "recall"
+    ],
+    "secondary": [
+      "average_precision"
+    ],
+    "daily_aggregation": "micro"
+  },
+  "main_contrasts": [
+    [
+      "LR2",
+      "LR0"
+    ],
+    [
+      "LGB-H3",
+      "LGB-H0"
+    ]
+  ],
+  "diagnostic_contrasts": [
+    [
+      "LR1",
+      "LR0"
+    ],
+    [
+      "LR2",
+      "LR1"
+    ],
+    [
+      "LGB-H1",
+      "LGB-H0"
+    ],
+    [
+      "LGB-H2",
+      "LGB-H1"
+    ],
+    [
+      "LGB-H3",
+      "LGB-H2"
+    ]
+  ],
+  "seeds": {
+    "model": 42,
+    "bootstrap": 20261121,
+    "random_example": 42
+  },
+  "uncertainty": {
+    "method": "paired_moving_block_bootstrap",
+    "block_days": 3,
+    "draws": 1000,
+    "percentiles": [
+      2.5,
+      97.5
+    ],
+    "separate_periods": true,
+    "training_uncertainty_included": false
+  },
+  "random_reference": {
+    "primary": "conditional_expected_hits",
+    "example_seed": 42,
+    "finite_sample_ap_expectation_claimed": false
+  },
+  "selection": {
+    "winner_selection": false,
+    "report_all_fixed_candidates": true,
+    "test_based_tuning": false
+  },
+  "fit_budget": {
+    "models_per_snapshot": 7,
+    "snapshots": 3,
+    "core_fits": 21,
+    "legacy_additional_max": 3,
+    "logistic_uniform_retry_max_iter": 3000,
+    "logistic_retry_additional_max": 9
+  },
+  "deferred": [
+    "identity_modeling",
+    "label_delay_simulation",
+    "graphsage",
+    "probability_calibration",
+    "dynamic_resource_optimization",
+    "production_deployment",
+    "large_hyperparameter_search",
+    "multiple_model_seeds"
+  ],
+  "required_docs": [
+    "README.md",
+    "docs/新版任务方案.md",
+    "docs/实验协议.md",
+    "docs/问题与解决对照.md",
+    "docs/现有证据与缺口.md",
+    "docs/报告与交付清单.md",
+    "results/README.md"
+  ],
+  "required_scripts": [
+    "scripts/validate_plan.py",
+    "scripts/audit_data.py"
+  ]
+}

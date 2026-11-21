@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "created_at_utc": "2026-11-21T13:52:25.488901+00:00",
+  "analysis_type": "independent_supplement_verification",
+  "code_sha256": "e4db7b410f2069f35306dd92e29a9d97e41ad378cf158182fb36a74a1c869fc5",
+  "checks": {
+    "raw_missingness_field_partition_groups": 1182,
+    "focused_raw_quantile_values": 126,
+    "all_omission_windows_present": true,
+    "original_three_day_intervals_unchanged": true,
+    "clean_environment_passed": true,
+    "baseline_model_period_groups": 28,
+    "independent_omission_model_checks": 259,
+    "three_day_intervals_reused": true
+  },
+  "source_sha256": {
+    "evidence/supplement_20261121_01/quality_audit.json": "97cfd9ec6681d21562d87068abb93efeae0238d8c2b8f0e7229d9aca6b134a54",
+    "evidence/supplement_20261121_01/sensitivity.json": "4fcd6e520ab9e39bade261b2f46797503a148b1e22fd062df02e1a0bd07a6290",
+    "evidence/supplement_20261121_01/clean_environment.json": "956c5f00240c7d8e09668dceb7abe6b220c3b331c67365bb63260ba8c209c20a"
+  },
+  "limitations": [
+    "Does not establish statistical coverage or causal mechanism",
+    "Clean environment tested synthetic end-to-end; no full real-data refit"
+  ]
+}

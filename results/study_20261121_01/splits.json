@@ -1,0 +1,84 @@
+{
+  "dev_F1": {
+    "train": {
+      "rows": 223738,
+      "fraud": 6978,
+      "start_dt": 86400,
+      "end_dt": 5270398,
+      "observed_days": 60,
+      "split_truncated_day_ids": [],
+      "ids_sha256": "76b41e56239299c6dd81700bde42336ab94ff3cef4630d2e884fc80a274964e1"
+    },
+    "evaluations": {
+      "dev_F1": {
+        "rows": 85610,
+        "fraud": 3478,
+        "start_dt": 5270451,
+        "end_dt": 7689592,
+        "observed_days": 28,
+        "split_truncated_day_ids": [],
+        "ids_sha256": "6b6e6776e6d532b9de3c60cbe59325596a8d46eeb82d5130a5efbae998a2986e"
+      }
+    }
+  },
+  "dev_F2": {
+    "train": {
+      "rows": 309348,
+      "fraud": 10456,
+      "start_dt": 86400,
+      "end_dt": 7689592,
+      "observed_days": 88,
+      "split_truncated_day_ids": [],
+      "ids_sha256": "ffa7c26eb75e9648a6e24926a552a2f678bd624e21cba6c0531c717e2567881a"
+    },
+    "evaluations": {
+      "dev_F2": {
+        "rows": 91732,
+        "fraud": 3507,
+        "start_dt": 7689603,
+        "end_dt": 10108794,
+        "observed_days": 28,
+        "split_truncated_day_ids": [],
+        "ids_sha256": "21572bd751365622ddbdc430eb776c931c75f225270fda55084ff82c26ce7ee9"
+      }
+    }
+  },
+  "original_train": {
+    "train": {
+      "rows": 413378,
+      "fraud": 14538,
+      "start_dt": 86400,
+      "end_dt": 10437996,
+      "observed_days": 120,
+      "split_truncated_day_ids": [
+        120
+      ],
+      "ids_sha256": "e99dce02c7dd91c1c0b15606ee6ab4cb2f692386f8c670711d510d3dae39c346"
+    },
+    "evaluations": {
+      "validation": {
+        "rows": 88581,
+        "fraud": 3042,
+        "start_dt": 10438003,
+        "end_dt": 13151840,
+        "observed_days": 33,
+        "split_truncated_day_ids": [
+          120,
+          152
+        ],
+        "ids_sha256": "6c2b31ee566923ac438f72c11e05e1c8047ac04c5975d082a1de15e089945ee3"
+      },
+      "test": {
+        "rows": 88581,
+        "fraud": 3083,
+        "start_dt": 13151880,
+        "end_dt": 15811131,
+        "observed_days": 31,
+        "split_truncated_day_ids": [
+          152
+        ],
+        "ids_sha256": "2cdc1792935bf23f2a14ec831f93335bda9c5e0127ebe277eb54c13d5689a6dc"
+      }
+    }
+  }
+}

@@ -1,0 +1,359 @@
+{
+  "analysis_type": "post_hoc_descriptive_no_tuning",
+  "code_sha256": "9b8f599d1e886c8f56a13466f4b9d0d4bebe51d86c052d8f93d39fc76360c821",
+  "test_top_primary_budget": {
+    "LR0": {
+      "reviews": 443,
+      "hits": 0,
+      "selected_days": 3,
+      "largest_day_share": 0.6162528216704289,
+      "day_records": [
+        {
+          "day_id": 171,
+          "reviews": 169,
+          "hits": 0
+        },
+        {
+          "day_id": 172,
+          "reviews": 273,
+          "hits": 0
+        },
+        {
+          "day_id": 181,
+          "reviews": 1,
+          "hits": 0
+        }
+      ],
+      "prediction_sha256": "227c3ab3891e54f75a552fc515c15d8414f66c5bc6b005fd860bfc23d0c2689b"
+    },
+    "LR1": {
+      "reviews": 443,
+      "hits": 376,
+      "selected_days": 31,
+      "largest_day_share": 0.1038374717832957,
+      "day_records": [
+        {
+          "day_id": 152,
+          "reviews": 3,
+          "hits": 3
+        },
+        {
+          "day_id": 153,
+          "reviews": 46,
+          "hits": 46
+        },
+        {
+          "day_id": 154,
+          "reviews": 6,
+          "hits": 6
+        },
+        {
+          "day_id": 155,
+          "reviews": 37,
+          "hits": 29
+        },
+        {
+          "day_id": 156,
+          "reviews": 3,
+          "hits": 3
+        },
+        {
+          "day_id": 157,
+          "reviews": 1,
+          "hits": 0
+        },
+        {
+          "day_id": 158,
+          "reviews": 5,
+          "hits": 5
+        },
+        {
+          "day_id": 159,
+          "reviews": 9,
+          "hits": 6
+        },
+        {
+          "day_id": 160,
+          "reviews": 6,
+          "hits": 6
+        },
+        {
+          "day_id": 161,
+          "reviews": 14,
+          "hits": 6
+        },
+        {
+          "day_id": 162,
+          "reviews": 32,
+          "hits": 26
+        },
+        {
+          "day_id": 163,
+          "reviews": 41,
+          "hits": 32
+        },
+        {
+          "day_id": 164,
+          "reviews": 10,
+          "hits": 2
+        },
+        {
+          "day_id": 165,
+          "reviews": 12,
+          "hits": 5
+        },
+        {
+          "day_id": 166,
+          "reviews": 5,
+          "hits": 5
+        },
+        {
+          "day_id": 167,
+          "reviews": 7,
+          "hits": 7
+        },
+        {
+          "day_id": 168,
+          "reviews": 19,
+          "hits": 19
+        },
+        {
+          "day_id": 169,
+          "reviews": 13,
+          "hits": 13
+        },
+        {
+          "day_id": 170,
+          "reviews": 7,
+          "hits": 6
+        },
+        {
+          "day_id": 171,
+          "reviews": 4,
+          "hits": 3
+        },
+        {
+          "day_id": 172,
+          "reviews": 14,
+          "hits": 10
+        },
+        {
+          "day_id": 173,
+          "reviews": 29,
+          "hits": 27
+        },
+        {
+          "day_id": 174,
+          "reviews": 4,
+          "hits": 4
+        },
+        {
+          "day_id": 175,
+          "reviews": 9,
+          "hits": 9
+        },
+        {
+          "day_id": 176,
+          "reviews": 20,
+          "hits": 20
+        },
+        {
+          "day_id": 177,
+          "reviews": 8,
+          "hits": 8
+        },
+        {
+          "day_id": 178,
+          "reviews": 24,
+          "hits": 24
+        },
+        {
+          "day_id": 179,
+          "reviews": 7,
+          "hits": 6
+        },
+        {
+          "day_id": 180,
+          "reviews": 13,
+          "hits": 10
+        },
+        {
+          "day_id": 181,
+          "reviews": 13,
+          "hits": 11
+        },
+        {
+          "day_id": 182,
+          "reviews": 22,
+          "hits": 19
+        }
+      ],
+      "prediction_sha256": "b3ef78dc307cdc152c284efd0a37415a027321fc618034d1df0e418d57721e19"
+    },
+    "LR2": {
+      "reviews": 443,
+      "hits": 383,
+      "selected_days": 31,
+      "largest_day_share": 0.10835214446952596,
+      "day_records": [
+        {
+          "day_id": 152,
+          "reviews": 3,
+          "hits": 3
+        },
+        {
+          "day_id": 153,
+          "reviews": 48,
+          "hits": 48
+        },
+        {
+          "day_id": 154,
+          "reviews": 6,
+          "hits": 6
+        },
+        {
+          "day_id": 155,
+          "reviews": 37,
+          "hits": 30
+        },
+        {
+          "day_id": 156,
+          "reviews": 3,
+          "hits": 3
+        },
+        {
+          "day_id": 157,
+          "reviews": 1,
+          "hits": 0
+        },
+        {
+          "day_id": 158,
+          "reviews": 5,
+          "hits": 5
+        },
+        {
+          "day_id": 159,
+          "reviews": 9,
+          "hits": 6
+        },
+        {
+          "day_id": 160,
+          "reviews": 7,
+          "hits": 6
+        },
+        {
+          "day_id": 161,
+          "reviews": 14,
+          "hits": 6
+        },
+        {
+          "day_id": 162,
+          "reviews": 33,
+          "hits": 26
+        },
+        {
+          "day_id": 163,
+          "reviews": 40,
+          "hits": 32
+        },
+        {
+          "day_id": 164,
+          "reviews": 8,
+          "hits": 1
+        },
+        {
+          "day_id": 165,
+          "reviews": 8,
+          "hits": 6
+        },
+        {
+          "day_id": 166,
+          "reviews": 5,
+          "hits": 5
+        },
+        {
+          "day_id": 167,
+          "reviews": 7,
+          "hits": 7
+        },
+        {
+          "day_id": 168,
+          "reviews": 20,
+          "hits": 20
+        },
+        {
+          "day_id": 169,
+          "reviews": 13,
+          "hits": 13
+        },
+        {
+          "day_id": 170,
+          "reviews": 7,
+          "hits": 6
+        },
+        {
+          "day_id": 171,
+          "reviews": 5,
+          "hits": 3
+        },
+        {
+          "day_id": 172,
+          "reviews": 14,
+          "hits": 10
+        },
+        {
+          "day_id": 173,
+          "reviews": 29,
+          "hits": 27
+        },
+        {
+          "day_id": 174,
+          "reviews": 6,
+          "hits": 6
+        },
+        {
+          "day_id": 175,
+          "reviews": 9,
+          "hits": 9
+        },
+        {
+          "day_id": 176,
+          "reviews": 21,
+          "hits": 21
+        },
+        {
+          "day_id": 177,
+          "reviews": 8,
+          "hits": 8
+        },
+        {
+          "day_id": 178,
+          "reviews": 24,
+          "hits": 24
+        },
+        {
+          "day_id": 179,
+          "reviews": 7,
+          "hits": 6
+        },
+        {
+          "day_id": 180,
+          "reviews": 13,
+          "hits": 10
+        },
+        {
+          "day_id": 181,
+          "reviews": 11,
+          "hits": 11
+        },
+        {
+          "day_id": 182,
+          "reviews": 22,
+          "hits": 19
+        }
+      ],
+      "prediction_sha256": "c54cf56fa479b98994d5e284ab269504815df639733db8ead4c6d0d92f44d5b3"
+    }
+  },
+  "interpretation": "Selected score extremes may concentrate on a few dates; resampling dates can therefore produce wide fixed-model intervals."
+}
