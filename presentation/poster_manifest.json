@@ -1,0 +1,2190 @@
+{
+  "created_at_utc": "2026-11-21T15:43:40.656320+00:00",
+  "page_mm": [
+    594,
+    841
+  ],
+  "orientation": "portrait",
+  "language": "en",
+  "layout": "three_columns_13_sections",
+  "source_sha256": {
+    "evidence/executed_summary.json": "058bc75e9e22b4f62cf59c90835a33903c79690a610c85f52da685cf03dab903",
+    "evidence/supplement_20261121_01/sensitivity.json": "4fcd6e520ab9e39bade261b2f46797503a148b1e22fd062df02e1a0bd07a6290",
+    "evidence/supplement_20261121_01/quality_audit.json": "97cfd9ec6681d21562d87068abb93efeae0238d8c2b8f0e7229d9aca6b134a54",
+    "evidence/supplement_20261121_01/verification.json": "6c0dd58ed1c43c0cc1702648566bd35b0a8ba6589d35a800e49a21051bca5c30",
+    "configs/study_plan.json": "e9d9f72b198feea20c3f4c46bc25f863bd526dda48f130a46318d4d4c6228ab2"
+  },
+  "code_sha256": "868364f34c5f8689d49309faa96eda0052fdd78f566f74c1d2e26725c38f88be",
+  "output_sha256": "573f5b823fb367c09d50fcf3302e63e63e963e0fca97173e3e2836c763cf96bf",
+  "column_bottoms_pt": [
+    2108.2399999999993,
+    2147.7899999999995,
+    2155.5499999999993
+  ],
+  "sections": [
+    {
+      "number": "01",
+      "title": "Question and data",
+      "column": 0,
+      "top": 470
+    },
+    {
+      "number": "02",
+      "title": "Time design and fit budget",
+      "column": 0,
+      "top": 716.3199999999999
+    },
+    {
+      "number": "03",
+      "title": "Seven controlled ablations",
+      "column": 0,
+      "top": 1096.56
+    },
+    {
+      "number": "04",
+      "title": "Leakage and boundary controls",
+      "column": 0,
+      "top": 1586.7099999999996
+    },
+    {
+      "number": "05",
+      "title": "Capacity and uncertainty",
+      "column": 0,
+      "top": 1876.2799999999995
+    },
+    {
+      "number": "06",
+      "title": "All candidates, all periods",
+      "column": 1,
+      "top": 470
+    },
+    {
+      "number": "07",
+      "title": "Budget sensitivity on test",
+      "column": 1,
+      "top": 1118.63
+    },
+    {
+      "number": "08",
+      "title": "Paired effects across time",
+      "column": 1,
+      "top": 1479.7800000000002
+    },
+    {
+      "number": "09",
+      "title": "What the ablations establish",
+      "column": 1,
+      "top": 2028.1299999999999
+    },
+    {
+      "number": "10",
+      "title": "Diagnosing the LR failure",
+      "column": 2,
+      "top": 470
+    },
+    {
+      "number": "11",
+      "title": "Daily capacity: matched totals",
+      "column": 2,
+      "top": 973.0299999999997
+    },
+    {
+      "number": "12",
+      "title": "How sensitive is inference?",
+      "column": 2,
+      "top": 1528.6799999999996
+    },
+    {
+      "number": "13",
+      "title": "Verified engineering and evidence",
+      "column": 2,
+      "top": 1939.9899999999993
+    }
+  ],
+  "plotted_data": {
+    "test_budget_precision": {
+      "LR0": [
+        0.0,
+        0.0,
+        0.013544018058690745,
+        0.286117381489842
+      ],
+      "LR2": [
+        0.9887640449438202,
+        0.8645598194130926,
+        0.7031602708803611,
+        0.510158013544018
+      ],
+      "LGB-H0": [
+        0.9438202247191011,
+        0.9300225733634312,
+        0.8905191873589164,
+        0.6698645598194131
+      ],
+      "LGB-H3": [
+        0.9438202247191011,
+        0.9142212189616253,
+        0.8871331828442438,
+        0.6822799097065463
+      ]
+    }
+  },
+  "text_boxes": [
+    {
+      "x": 44,
+      "top": 25,
+      "width": 1595.7795275590554,
+      "bottom": 49.129999999999995,
+      "text": "DSC5001  /  STATISTICAL MACHINE LEARNING I",
+      "font_size": 19
+    },
+    {
+      "x": 41,
+      "top": 60,
+      "width": 1601.7795275590554,
+      "bottom": 143.82,
+      "text": "Payment fraud ranking",
+      "font_size": 66
+    },
+    {
+      "x": 44,
+      "top": 145,
+      "width": 1595.7795275590554,
+      "bottom": 181.82999999999998,
+      "text": "Temporal stability, numerical repair and the value of transaction history",
+      "font_size": 29
+    },
+    {
+      "x": 44,
+      "top": 194,
+      "width": 1595.7795275590554,
+      "bottom": 219.4,
+      "text": "Team FraudML  |  Retrospective study  |  21 November 2026",
+      "font_size": 20
+    },
+    {
+      "x": 44.0,
+      "top": 253,
+      "width": 311.15590551181106,
+      "bottom": 274.59,
+      "text": "<b>Wang Yashi</b>  |  60926887",
+      "font_size": 17
+    },
+    {
+      "x": 363.15590551181106,
+      "top": 253,
+      "width": 311.15590551181106,
+      "bottom": 274.59,
+      "text": "<b>Li Yihui</b>  |  60451042",
+      "font_size": 17
+    },
+    {
+      "x": 682.3118110236221,
+      "top": 253,
+      "width": 311.15590551181106,
+      "bottom": 274.59,
+      "text": "<b>Wang Shihong</b>  |  60995230",
+      "font_size": 17
+    },
+    {
+      "x": 1001.4677165354333,
+      "top": 253,
+      "width": 311.15590551181106,
+      "bottom": 274.59,
+      "text": "<b>Wu Jiaqi</b>  |  61034244",
+      "font_size": 17
+    },
+    {
+      "x": 1320.6236220472442,
+      "top": 253,
+      "width": 311.15590551181106,
+      "bottom": 274.59,
+      "text": "<b>Chen Situ</b>  |  60791221",
+      "font_size": 17
+    },
+    {
+      "x": 44.0,
+      "top": 293,
+      "width": 309.15590551181106,
+      "bottom": 338.72,
+      "text": "590,540",
+      "font_size": 36
+    },
+    {
+      "x": 44.0,
+      "top": 340,
+      "width": 307.15590551181106,
+      "bottom": 361.59,
+      "text": "transactions / 3.50% fraud",
+      "font_size": 17
+    },
+    {
+      "x": 363.15590551181106,
+      "top": 293,
+      "width": 309.15590551181106,
+      "bottom": 338.72,
+      "text": "21 + 3",
+      "font_size": 36
+    },
+    {
+      "x": 363.15590551181106,
+      "top": 340,
+      "width": 307.15590551181106,
+      "bottom": 361.59,
+      "text": "core fits / legacy reruns",
+      "font_size": 17
+    },
+    {
+      "x": 682.3118110236221,
+      "top": 293,
+      "width": 309.15590551181106,
+      "bottom": 338.72,
+      "text": "7 x 4",
+      "font_size": 36
+    },
+    {
+      "x": 682.3118110236221,
+      "top": 340,
+      "width": 307.15590551181106,
+      "bottom": 361.59,
+      "text": "candidates / evaluation periods",
+      "font_size": 17
+    },
+    {
+      "x": 1001.4677165354333,
+      "top": 293,
+      "width": 309.15590551181106,
+      "bottom": 338.72,
+      "text": "394",
+      "font_size": 36
+    },
+    {
+      "x": 1001.4677165354333,
+      "top": 340,
+      "width": 307.15590551181106,
+      "bottom": 361.59,
+      "text": "columns audited",
+      "font_size": 17
+    },
+    {
+      "x": 1320.6236220472442,
+      "top": 293,
+      "width": 309.15590551181106,
+      "bottom": 338.72,
+      "text": "332",
+      "font_size": 36
+    },
+    {
+      "x": 1320.6236220472442,
+      "top": 340,
+      "width": 307.15590551181106,
+      "bottom": 361.59,
+      "text": "date-omission scenarios",
+      "font_size": 17
+    },
+    {
+      "x": 59,
+      "top": 396,
+      "width": 190,
+      "bottom": 418.86,
+      "text": "MAIN FINDING",
+      "font_size": 18
+    },
+    {
+      "x": 252,
+      "top": 393,
+      "width": 1369.7795275590554,
+      "bottom": 451.42,
+      "text": "Clipping repairs severe LR degradation; more history does not deliver stable gains.<br/>At the same review capacity, the dates receiving extreme scores can change the conclusion.",
+      "font_size": 23
+    },
+    {
+      "x": 44.0,
+      "top": 482,
+      "width": 34,
+      "bottom": 506.13,
+      "text": "01",
+      "font_size": 19
+    },
+    {
+      "x": 83.0,
+      "top": 480,
+      "width": 474.2598425196851,
+      "bottom": 510.48,
+      "text": "Question and data",
+      "font_size": 24
+    },
+    {
+      "x": 44.0,
+      "top": 519.48,
+      "width": 513.2598425196851,
+      "bottom": 608.4,
+      "text": "Under the <b>same limited review capacity</b>, do numerical repair and richer history improve fraud ranking across time? We separate preprocessing effects, feature increments and date composition.",
+      "font_size": 19
+    },
+    {
+      "x": 44.0,
+      "top": 615.4,
+      "width": 513.2598425196851,
+      "bottom": 704.3199999999999,
+      "text": "IEEE-CIS / Vesta [1]: <b>590,540 labeled transactions</b>, 20,663 fraud labels, 394 raw columns and 182 relative day buckets. Identity is audit-only. ID, target and split time are excluded from model inputs.",
+      "font_size": 19
+    },
+    {
+      "x": 44.0,
+      "top": 728.3199999999999,
+      "width": 34,
+      "bottom": 752.4499999999999,
+      "text": "02",
+      "font_size": 19
+    },
+    {
+      "x": 83.0,
+      "top": 726.3199999999999,
+      "width": 474.2598425196851,
+      "bottom": 756.8,
+      "text": "Time design and fit budget",
+      "font_size": 24
+    },
+    {
+      "x": 52.0,
+      "top": 772.8,
+      "width": 86,
+      "bottom": 794.39,
+      "text": "Period",
+      "font_size": 17
+    },
+    {
+      "x": 152.0,
+      "top": 772.8,
+      "width": 129,
+      "bottom": 794.39,
+      "text": "Train n",
+      "font_size": 17
+    },
+    {
+      "x": 295.0,
+      "top": 772.8,
+      "width": 129,
+      "bottom": 794.39,
+      "text": "Eval. n",
+      "font_size": 17
+    },
+    {
+      "x": 438.0,
+      "top": 772.8,
+      "width": 113.2598425196851,
+      "bottom": 794.39,
+      "text": "Days",
+      "font_size": 17
+    },
+    {
+      "x": 52.0,
+      "top": 806.8,
+      "width": 86,
+      "bottom": 828.4,
+      "text": "Dev F1",
+      "font_size": 18
+    },
+    {
+      "x": 152.0,
+      "top": 806.8,
+      "width": 129,
+      "bottom": 828.4,
+      "text": "223,738",
+      "font_size": 18
+    },
+    {
+      "x": 295.0,
+      "top": 806.8,
+      "width": 129,
+      "bottom": 828.4,
+      "text": "85,610",
+      "font_size": 18
+    },
+    {
+      "x": 438.0,
+      "top": 806.8,
+      "width": 113.2598425196851,
+      "bottom": 828.4,
+      "text": "28",
+      "font_size": 18
+    },
+    {
+      "x": 52.0,
+      "top": 842.4,
+      "width": 86,
+      "bottom": 864.0,
+      "text": "Dev F2",
+      "font_size": 18
+    },
+    {
+      "x": 152.0,
+      "top": 842.4,
+      "width": 129,
+      "bottom": 864.0,
+      "text": "309,348",
+      "font_size": 18
+    },
+    {
+      "x": 295.0,
+      "top": 842.4,
+      "width": 129,
+      "bottom": 864.0,
+      "text": "91,732",
+      "font_size": 18
+    },
+    {
+      "x": 438.0,
+      "top": 842.4,
+      "width": 113.2598425196851,
+      "bottom": 864.0,
+      "text": "28",
+      "font_size": 18
+    },
+    {
+      "x": 52.0,
+      "top": 878.0,
+      "width": 86,
+      "bottom": 899.6,
+      "text": "Valid.",
+      "font_size": 18
+    },
+    {
+      "x": 152.0,
+      "top": 878.0,
+      "width": 129,
+      "bottom": 899.6,
+      "text": "413,378",
+      "font_size": 18
+    },
+    {
+      "x": 295.0,
+      "top": 878.0,
+      "width": 129,
+      "bottom": 899.6,
+      "text": "88,581",
+      "font_size": 18
+    },
+    {
+      "x": 438.0,
+      "top": 878.0,
+      "width": 113.2598425196851,
+      "bottom": 899.6,
+      "text": "33",
+      "font_size": 18
+    },
+    {
+      "x": 52.0,
+      "top": 913.6,
+      "width": 86,
+      "bottom": 935.2,
+      "text": "Test",
+      "font_size": 18
+    },
+    {
+      "x": 152.0,
+      "top": 913.6,
+      "width": 129,
+      "bottom": 935.2,
+      "text": "413,378",
+      "font_size": 18
+    },
+    {
+      "x": 295.0,
+      "top": 913.6,
+      "width": 129,
+      "bottom": 935.2,
+      "text": "88,581",
+      "font_size": 18
+    },
+    {
+      "x": 438.0,
+      "top": 913.6,
+      "width": 113.2598425196851,
+      "bottom": 935.2,
+      "text": "31",
+      "font_size": 18
+    },
+    {
+      "x": 44.0,
+      "top": 951.2,
+      "width": 513.2598425196851,
+      "bottom": 1014.38,
+      "text": "Evaluate days <b>[61,89)</b> and <b>[89,117)</b>. Overlapping expanding training windows are not independent replications. Validation/test share one 413,378-row fitted snapshot.",
+      "font_size": 18
+    },
+    {
+      "x": 44.0,
+      "top": 1021.38,
+      "width": 513.2598425196851,
+      "bottom": 1084.56,
+      "text": "<b>7 candidates x 3 snapshots = 21 core fits</b>, plus 3 legacy reruns. All 9 LR fits converged. Parameters and candidates are fixed; no large search or test-based winner selection.",
+      "font_size": 18
+    },
+    {
+      "x": 44.0,
+      "top": 1108.56,
+      "width": 34,
+      "bottom": 1132.69,
+      "text": "03",
+      "font_size": 19
+    },
+    {
+      "x": 83.0,
+      "top": 1106.56,
+      "width": 474.2598425196851,
+      "bottom": 1137.04,
+      "text": "Seven controlled ablations",
+      "font_size": 24
+    },
+    {
+      "x": 52.0,
+      "top": 1153.04,
+      "width": 98,
+      "bottom": 1175.8999999999999,
+      "text": "Candidate",
+      "font_size": 18
+    },
+    {
+      "x": 164.0,
+      "top": 1153.04,
+      "width": 387.2598425196851,
+      "bottom": 1175.8999999999999,
+      "text": "Change under test",
+      "font_size": 18
+    },
+    {
+      "x": 52.0,
+      "top": 1187.04,
+      "width": 98,
+      "bottom": 1209.84,
+      "text": "LR0",
+      "font_size": 19
+    },
+    {
+      "x": 164.0,
+      "top": 1187.04,
+      "width": 387.2598425196851,
+      "bottom": 1209.84,
+      "text": "Original numeric pipeline; L2, C=1.",
+      "font_size": 19
+    },
+    {
+      "x": 52.0,
+      "top": 1223.84,
+      "width": 98,
+      "bottom": 1246.6399999999999,
+      "text": "LR1",
+      "font_size": 19
+    },
+    {
+      "x": 164.0,
+      "top": 1223.84,
+      "width": 387.2598425196851,
+      "bottom": 1246.6399999999999,
+      "text": "LR0 + train-fitted 0.1-99.9% clipping.",
+      "font_size": 19
+    },
+    {
+      "x": 52.0,
+      "top": 1260.6399999999999,
+      "width": 98,
+      "bottom": 1283.4399999999998,
+      "text": "LR2",
+      "font_size": 19
+    },
+    {
+      "x": 164.0,
+      "top": 1260.6399999999999,
+      "width": 387.2598425196851,
+      "bottom": 1283.4399999999998,
+      "text": "LR1 + stronger L2 penalty, C=0.1.",
+      "font_size": 19
+    },
+    {
+      "x": 52.0,
+      "top": 1297.4399999999998,
+      "width": 98,
+      "bottom": 1320.2399999999998,
+      "text": "LGB-H0",
+      "font_size": 19
+    },
+    {
+      "x": 164.0,
+      "top": 1297.4399999999998,
+      "width": 387.2598425196851,
+      "bottom": 1320.2399999999998,
+      "text": "Base LightGBM [2]; no added history.",
+      "font_size": 19
+    },
+    {
+      "x": 52.0,
+      "top": 1334.2399999999998,
+      "width": 98,
+      "bottom": 1357.0399999999997,
+      "text": "LGB-H1",
+      "font_size": 19
+    },
+    {
+      "x": 164.0,
+      "top": 1334.2399999999998,
+      "width": 387.2598425196851,
+      "bottom": 1379.8399999999997,
+      "text": "+4 cumulative fields; shared missing-entity group.",
+      "font_size": 19
+    },
+    {
+      "x": 52.0,
+      "top": 1393.8399999999997,
+      "width": 98,
+      "bottom": 1416.6399999999996,
+      "text": "LGB-H2",
+      "font_size": 19
+    },
+    {
+      "x": 164.0,
+      "top": 1393.8399999999997,
+      "width": 387.2598425196851,
+      "bottom": 1439.4399999999996,
+      "text": "Same history; missing entities keep history missing.",
+      "font_size": 19
+    },
+    {
+      "x": 52.0,
+      "top": 1453.4399999999996,
+      "width": 98,
+      "bottom": 1476.2399999999996,
+      "text": "LGB-H3",
+      "font_size": 19
+    },
+    {
+      "x": 164.0,
+      "top": 1453.4399999999996,
+      "width": 387.2598425196851,
+      "bottom": 1499.0399999999995,
+      "text": "+4 fields: card1/addr1 24h counts and elapsed time.",
+      "font_size": 19
+    },
+    {
+      "x": 44.0,
+      "top": 1515.0399999999995,
+      "width": 513.2598425196851,
+      "bottom": 1574.7099999999996,
+      "text": "LR: balanced classes, L-BFGS, max_iter=1000; rank by decision_function. LightGBM: 300 trees, learning rate 0.05, 31 leaves, min_child_samples=20; balanced classes, seed 42.",
+      "font_size": 17
+    },
+    {
+      "x": 44.0,
+      "top": 1598.7099999999996,
+      "width": 34,
+      "bottom": 1622.8399999999997,
+      "text": "04",
+      "font_size": 19
+    },
+    {
+      "x": 83.0,
+      "top": 1596.7099999999996,
+      "width": 474.2598425196851,
+      "bottom": 1627.1899999999996,
+      "text": "Leakage and boundary controls",
+      "font_size": 24
+    },
+    {
+      "x": 44.0,
+      "top": 1636.1899999999996,
+      "width": 513.2598425196851,
+      "bottom": 1678.3099999999995,
+      "text": "<font color='#007F80'><b>TRAIN ONLY</b></font>  Fit clipping, imputation, encoding and scaling on training data. Clip amount, dist1/2 and C/D/V numeric fields.",
+      "font_size": 18
+    },
+    {
+      "x": 44.0,
+      "top": 1685.3099999999995,
+      "width": 513.2598425196851,
+      "bottom": 1727.4299999999994,
+      "text": "<font color='#007F80'><b>STRICT PAST</b></font>  History uses card1 and addr1 inputs at times &lt;t, never labels; 24h windows are [t-86400,t).",
+      "font_size": 18
+    },
+    {
+      "x": 44.0,
+      "top": 1734.4299999999994,
+      "width": 513.2598425196851,
+      "bottom": 1797.6099999999994,
+      "text": "<font color='#007F80'><b>TIED TIMES</b></font>  Compute all rows at one timestamp before updating state. Normalize codes such as 123 and 123.0 consistently.",
+      "font_size": 18
+    },
+    {
+      "x": 44.0,
+      "top": 1804.6099999999994,
+      "width": 513.2598425196851,
+      "bottom": 1864.2799999999995,
+      "text": "Training labels are assumed available at each cutoff; actual arrival times are unknown. Previously viewed test results remain retrospective. Anonymous entity codes are not verified identities.",
+      "font_size": 17
+    },
+    {
+      "x": 44.0,
+      "top": 1888.2799999999995,
+      "width": 34,
+      "bottom": 1912.4099999999996,
+      "text": "05",
+      "font_size": 19
+    },
+    {
+      "x": 83.0,
+      "top": 1886.2799999999995,
+      "width": 474.2598425196851,
+      "bottom": 1916.7599999999995,
+      "text": "Capacity and uncertainty",
+      "font_size": 24
+    },
+    {
+      "x": 44.0,
+      "top": 1925.7599999999995,
+      "width": 513.2598425196851,
+      "bottom": 2009.9999999999995,
+      "text": "<b>K = ceil(r x N)</b>; hits = fraud labels in the top K.<br/><b>Precision = hits/K</b>; recall = hits/total fraud.<br/>Primary r=0.5%; also 0.1%, 1%, 2% and legacy Top100/500. AP is average precision [3].",
+      "font_size": 18
+    },
+    {
+      "x": 44.0,
+      "top": 2016.9999999999995,
+      "width": 513.2598425196851,
+      "bottom": 2101.2399999999993,
+      "text": "Main contrasts: LR2-LR0 and H3-H0. Each period uses <b>1,000 paired 3-day moving-block draws</b> for percentile 95% intervals. Daily 8/16/32-review scenarios match the global comparator's actual total capacity.",
+      "font_size": 18
+    },
+    {
+      "x": 585.2598425196851,
+      "top": 482,
+      "width": 34,
+      "bottom": 506.13,
+      "text": "06",
+      "font_size": 19
+    },
+    {
+      "x": 624.2598425196851,
+      "top": 480,
+      "width": 474.2598425196851,
+      "bottom": 510.48,
+      "text": "All candidates, all periods",
+      "font_size": 24
+    },
+    {
+      "x": 585.2598425196851,
+      "top": 519.48,
+      "width": 513.2598425196851,
+      "bottom": 582.66,
+      "text": "Fraud hits at <b>0.5% period capacity</b>. Column budgets differ with evaluation size; compare models within each period. Test contains 3,083 fraud labels.",
+      "font_size": 18
+    },
+    {
+      "x": 593.2598425196851,
+      "top": 596.66,
+      "width": 98,
+      "bottom": 619.52,
+      "text": "Model",
+      "font_size": 18
+    },
+    {
+      "x": 705.2598425196851,
+      "top": 596.66,
+      "width": 86.31496062992127,
+      "bottom": 619.52,
+      "text": "Dev F1",
+      "font_size": 18
+    },
+    {
+      "x": 805.5748031496064,
+      "top": 596.66,
+      "width": 86.31496062992127,
+      "bottom": 619.52,
+      "text": "Dev F2",
+      "font_size": 18
+    },
+    {
+      "x": 905.8897637795276,
+      "top": 596.66,
+      "width": 86.31496062992127,
+      "bottom": 619.52,
+      "text": "Valid.",
+      "font_size": 18
+    },
+    {
+      "x": 1006.2047244094489,
+      "top": 596.66,
+      "width": 86.31496062992127,
+      "bottom": 619.52,
+      "text": "Test",
+      "font_size": 18
+    },
+    {
+      "x": 593.2598425196851,
+      "top": 630.66,
+      "width": 98,
+      "bottom": 653.4599999999999,
+      "text": "LR0",
+      "font_size": 19
+    },
+    {
+      "x": 705.2598425196851,
+      "top": 630.66,
+      "width": 86.31496062992127,
+      "bottom": 653.4599999999999,
+      "text": "382",
+      "font_size": 19
+    },
+    {
+      "x": 805.5748031496064,
+      "top": 630.66,
+      "width": 86.31496062992127,
+      "bottom": 653.4599999999999,
+      "text": "422",
+      "font_size": 19
+    },
+    {
+      "x": 905.8897637795276,
+      "top": 630.66,
+      "width": 86.31496062992127,
+      "bottom": 653.4599999999999,
+      "text": "384",
+      "font_size": 19
+    },
+    {
+      "x": 1006.2047244094489,
+      "top": 630.66,
+      "width": 86.31496062992127,
+      "bottom": 653.4599999999999,
+      "text": "0",
+      "font_size": 19
+    },
+    {
+      "x": 593.2598425196851,
+      "top": 667.66,
+      "width": 98,
+      "bottom": 690.4599999999999,
+      "text": "LR1",
+      "font_size": 19
+    },
+    {
+      "x": 705.2598425196851,
+      "top": 667.66,
+      "width": 86.31496062992127,
+      "bottom": 690.4599999999999,
+      "text": "409",
+      "font_size": 19
+    },
+    {
+      "x": 805.5748031496064,
+      "top": 667.66,
+      "width": 86.31496062992127,
+      "bottom": 690.4599999999999,
+      "text": "435",
+      "font_size": 19
+    },
+    {
+      "x": 905.8897637795276,
+      "top": 667.66,
+      "width": 86.31496062992127,
+      "bottom": 690.4599999999999,
+      "text": "397",
+      "font_size": 19
+    },
+    {
+      "x": 1006.2047244094489,
+      "top": 667.66,
+      "width": 86.31496062992127,
+      "bottom": 690.4599999999999,
+      "text": "376",
+      "font_size": 19
+    },
+    {
+      "x": 593.2598425196851,
+      "top": 704.66,
+      "width": 98,
+      "bottom": 727.4599999999999,
+      "text": "LR2",
+      "font_size": 19
+    },
+    {
+      "x": 705.2598425196851,
+      "top": 704.66,
+      "width": 86.31496062992127,
+      "bottom": 727.4599999999999,
+      "text": "406",
+      "font_size": 19
+    },
+    {
+      "x": 805.5748031496064,
+      "top": 704.66,
+      "width": 86.31496062992127,
+      "bottom": 727.4599999999999,
+      "text": "434",
+      "font_size": 19
+    },
+    {
+      "x": 905.8897637795276,
+      "top": 704.66,
+      "width": 86.31496062992127,
+      "bottom": 727.4599999999999,
+      "text": "393",
+      "font_size": 19
+    },
+    {
+      "x": 1006.2047244094489,
+      "top": 704.66,
+      "width": 86.31496062992127,
+      "bottom": 727.4599999999999,
+      "text": "383",
+      "font_size": 19
+    },
+    {
+      "x": 593.2598425196851,
+      "top": 741.66,
+      "width": 98,
+      "bottom": 764.4599999999999,
+      "text": "LGB-H0",
+      "font_size": 19
+    },
+    {
+      "x": 705.2598425196851,
+      "top": 741.66,
+      "width": 86.31496062992127,
+      "bottom": 764.4599999999999,
+      "text": "423",
+      "font_size": 19
+    },
+    {
+      "x": 805.5748031496064,
+      "top": 741.66,
+      "width": 86.31496062992127,
+      "bottom": 764.4599999999999,
+      "text": "444",
+      "font_size": 19
+    },
+    {
+      "x": 905.8897637795276,
+      "top": 741.66,
+      "width": 86.31496062992127,
+      "bottom": 764.4599999999999,
+      "text": "417",
+      "font_size": 19
+    },
+    {
+      "x": 1006.2047244094489,
+      "top": 741.66,
+      "width": 86.31496062992127,
+      "bottom": 764.4599999999999,
+      "text": "412",
+      "font_size": 19
+    },
+    {
+      "x": 593.2598425196851,
+      "top": 778.66,
+      "width": 98,
+      "bottom": 801.4599999999999,
+      "text": "LGB-H1",
+      "font_size": 19
+    },
+    {
+      "x": 705.2598425196851,
+      "top": 778.66,
+      "width": 86.31496062992127,
+      "bottom": 801.4599999999999,
+      "text": "423",
+      "font_size": 19
+    },
+    {
+      "x": 805.5748031496064,
+      "top": 778.66,
+      "width": 86.31496062992127,
+      "bottom": 801.4599999999999,
+      "text": "435",
+      "font_size": 19
+    },
+    {
+      "x": 905.8897637795276,
+      "top": 778.66,
+      "width": 86.31496062992127,
+      "bottom": 801.4599999999999,
+      "text": "420",
+      "font_size": 19
+    },
+    {
+      "x": 1006.2047244094489,
+      "top": 778.66,
+      "width": 86.31496062992127,
+      "bottom": 801.4599999999999,
+      "text": "405",
+      "font_size": 19
+    },
+    {
+      "x": 593.2598425196851,
+      "top": 815.66,
+      "width": 98,
+      "bottom": 838.4599999999999,
+      "text": "LGB-H2",
+      "font_size": 19
+    },
+    {
+      "x": 705.2598425196851,
+      "top": 815.66,
+      "width": 86.31496062992127,
+      "bottom": 838.4599999999999,
+      "text": "423",
+      "font_size": 19
+    },
+    {
+      "x": 805.5748031496064,
+      "top": 815.66,
+      "width": 86.31496062992127,
+      "bottom": 838.4599999999999,
+      "text": "444",
+      "font_size": 19
+    },
+    {
+      "x": 905.8897637795276,
+      "top": 815.66,
+      "width": 86.31496062992127,
+      "bottom": 838.4599999999999,
+      "text": "419",
+      "font_size": 19
+    },
+    {
+      "x": 1006.2047244094489,
+      "top": 815.66,
+      "width": 86.31496062992127,
+      "bottom": 838.4599999999999,
+      "text": "406",
+      "font_size": 19
+    },
+    {
+      "x": 593.2598425196851,
+      "top": 852.66,
+      "width": 98,
+      "bottom": 875.4599999999999,
+      "text": "LGB-H3",
+      "font_size": 19
+    },
+    {
+      "x": 705.2598425196851,
+      "top": 852.66,
+      "width": 86.31496062992127,
+      "bottom": 875.4599999999999,
+      "text": "425",
+      "font_size": 19
+    },
+    {
+      "x": 805.5748031496064,
+      "top": 852.66,
+      "width": 86.31496062992127,
+      "bottom": 875.4599999999999,
+      "text": "433",
+      "font_size": 19
+    },
+    {
+      "x": 905.8897637795276,
+      "top": 852.66,
+      "width": 86.31496062992127,
+      "bottom": 875.4599999999999,
+      "text": "421",
+      "font_size": 19
+    },
+    {
+      "x": 1006.2047244094489,
+      "top": 852.66,
+      "width": 86.31496062992127,
+      "bottom": 875.4599999999999,
+      "text": "405",
+      "font_size": 19
+    },
+    {
+      "x": 593.2598425196851,
+      "top": 898.66,
+      "width": 98,
+      "bottom": 920.25,
+      "text": "Reviews",
+      "font_size": 17
+    },
+    {
+      "x": 705.2598425196851,
+      "top": 898.66,
+      "width": 86.31496062992127,
+      "bottom": 920.25,
+      "text": "429",
+      "font_size": 17
+    },
+    {
+      "x": 805.5748031496064,
+      "top": 898.66,
+      "width": 86.31496062992127,
+      "bottom": 920.25,
+      "text": "459",
+      "font_size": 17
+    },
+    {
+      "x": 905.8897637795276,
+      "top": 898.66,
+      "width": 86.31496062992127,
+      "bottom": 920.25,
+      "text": "443",
+      "font_size": 17
+    },
+    {
+      "x": 1006.2047244094489,
+      "top": 898.66,
+      "width": 86.31496062992127,
+      "bottom": 920.25,
+      "text": "443",
+      "font_size": 17
+    },
+    {
+      "x": 585.2598425196851,
+      "top": 934.66,
+      "width": 513.2598425196851,
+      "bottom": 1039.96,
+      "text": "<b>Test precision / recall / AP</b><br/>LR0: 0.00% / 0.00% / 0.178<br/>LR2: 86.46% / 12.42% / 0.370<br/>H0: 93.00% / 13.36% / 0.500<br/>H3: 91.42% / 13.14% / 0.497",
+      "font_size": 18
+    },
+    {
+      "x": 585.2598425196851,
+      "top": 1046.96,
+      "width": 513.2598425196851,
+      "bottom": 1106.63,
+      "text": "Amount ranking: <b>8/443</b>; random conditional expectation: <b>15.42/443</b>. LR0 probability ranking gives 6 hits; margin ranking gives 0. Removing probability saturation alone does not repair the ranking.",
+      "font_size": 17
+    },
+    {
+      "x": 585.2598425196851,
+      "top": 1130.63,
+      "width": 34,
+      "bottom": 1154.7600000000002,
+      "text": "07",
+      "font_size": 19
+    },
+    {
+      "x": 624.2598425196851,
+      "top": 1128.63,
+      "width": 474.2598425196851,
+      "bottom": 1159.1100000000001,
+      "text": "Budget sensitivity on test",
+      "font_size": 24
+    },
+    {
+      "x": 585.2598425196851,
+      "top": 1327.1100000000001,
+      "width": 39,
+      "bottom": 1347.43,
+      "text": "0",
+      "font_size": 16
+    },
+    {
+      "x": 585.2598425196851,
+      "top": 1287.1100000000001,
+      "width": 39,
+      "bottom": 1307.43,
+      "text": "25",
+      "font_size": 16
+    },
+    {
+      "x": 585.2598425196851,
+      "top": 1247.1100000000001,
+      "width": 39,
+      "bottom": 1267.43,
+      "text": "50",
+      "font_size": 16
+    },
+    {
+      "x": 585.2598425196851,
+      "top": 1207.1100000000001,
+      "width": 39,
+      "bottom": 1227.43,
+      "text": "75",
+      "font_size": 16
+    },
+    {
+      "x": 585.2598425196851,
+      "top": 1167.1100000000001,
+      "width": 39,
+      "bottom": 1187.43,
+      "text": "100",
+      "font_size": 16
+    },
+    {
+      "x": 616.2598425196851,
+      "top": 1351.1100000000001,
+      "width": 55,
+      "bottom": 1371.43,
+      "text": "0.1%",
+      "font_size": 16
+    },
+    {
+      "x": 710.6303356817241,
+      "top": 1351.1100000000001,
+      "width": 55,
+      "bottom": 1371.43,
+      "text": "0.5%",
+      "font_size": 16
+    },
+    {
+      "x": 828.5934521342729,
+      "top": 1351.1100000000001,
+      "width": 55,
+      "bottom": 1371.43,
+      "text": "1%",
+      "font_size": 16
+    },
+    {
+      "x": 1064.5196850393702,
+      "top": 1351.1100000000001,
+      "width": 55,
+      "bottom": 1371.43,
+      "text": "2%",
+      "font_size": 16
+    },
+    {
+      "x": 610.2598425196851,
+      "top": 1377.1100000000001,
+      "width": 103.31496062992127,
+      "bottom": 1397.43,
+      "text": "LR0",
+      "font_size": 16
+    },
+    {
+      "x": 738.5748031496064,
+      "top": 1377.1100000000001,
+      "width": 103.31496062992127,
+      "bottom": 1397.43,
+      "text": "LR2",
+      "font_size": 16
+    },
+    {
+      "x": 866.8897637795276,
+      "top": 1377.1100000000001,
+      "width": 103.31496062992127,
+      "bottom": 1397.43,
+      "text": "LGB-H0",
+      "font_size": 16
+    },
+    {
+      "x": 995.2047244094489,
+      "top": 1377.1100000000001,
+      "width": 103.31496062992127,
+      "bottom": 1397.43,
+      "text": "LGB-H3",
+      "font_size": 16
+    },
+    {
+      "x": 585.2598425196851,
+      "top": 1408.1100000000001,
+      "width": 513.2598425196851,
+      "bottom": 1467.7800000000002,
+      "text": "Y: precision (%). X: review rate. H0/H3 are close; LR0 fails most severely at tight capacity. Complete seven-model results remain in the evidence.",
+      "font_size": 17
+    },
+    {
+      "x": 585.2598425196851,
+      "top": 1491.7800000000002,
+      "width": 34,
+      "bottom": 1515.9100000000003,
+      "text": "08",
+      "font_size": 19
+    },
+    {
+      "x": 624.2598425196851,
+      "top": 1489.7800000000002,
+      "width": 474.2598425196851,
+      "bottom": 1520.2600000000002,
+      "text": "Paired effects across time",
+      "font_size": 24
+    },
+    {
+      "x": 585.2598425196851,
+      "top": 1529.2600000000002,
+      "width": 513.2598425196851,
+      "bottom": 1550.3200000000002,
+      "text": "LR2-LR0: hit difference [3-day-block 95% interval]",
+      "font_size": 18
+    },
+    {
+      "x": 593.2598425196851,
+      "top": 1564.3200000000002,
+      "width": 96,
+      "bottom": 1585.91,
+      "text": "Period",
+      "font_size": 17
+    },
+    {
+      "x": 703.2598425196851,
+      "top": 1564.3200000000002,
+      "width": 119,
+      "bottom": 1585.91,
+      "text": "Difference",
+      "font_size": 17
+    },
+    {
+      "x": 836.2598425196851,
+      "top": 1564.3200000000002,
+      "width": 256.2598425196851,
+      "bottom": 1585.91,
+      "text": "95% interval",
+      "font_size": 17
+    },
+    {
+      "x": 593.2598425196851,
+      "top": 1598.3200000000002,
+      "width": 96,
+      "bottom": 1619.92,
+      "text": "Dev F1",
+      "font_size": 18
+    },
+    {
+      "x": 703.2598425196851,
+      "top": 1598.3200000000002,
+      "width": 119,
+      "bottom": 1619.92,
+      "text": "+24",
+      "font_size": 18
+    },
+    {
+      "x": 836.2598425196851,
+      "top": 1598.3200000000002,
+      "width": 256.2598425196851,
+      "bottom": 1619.92,
+      "text": "[12.98, 38.02]",
+      "font_size": 18
+    },
+    {
+      "x": 593.2598425196851,
+      "top": 1633.92,
+      "width": 96,
+      "bottom": 1655.52,
+      "text": "Dev F2",
+      "font_size": 18
+    },
+    {
+      "x": 703.2598425196851,
+      "top": 1633.92,
+      "width": 119,
+      "bottom": 1655.52,
+      "text": "+12",
+      "font_size": 18
+    },
+    {
+      "x": 836.2598425196851,
+      "top": 1633.92,
+      "width": 256.2598425196851,
+      "bottom": 1655.52,
+      "text": "[0.00, 27.00]",
+      "font_size": 18
+    },
+    {
+      "x": 593.2598425196851,
+      "top": 1669.52,
+      "width": 96,
+      "bottom": 1691.12,
+      "text": "Valid.",
+      "font_size": 18
+    },
+    {
+      "x": 703.2598425196851,
+      "top": 1669.52,
+      "width": 119,
+      "bottom": 1691.12,
+      "text": "+9",
+      "font_size": 18
+    },
+    {
+      "x": 836.2598425196851,
+      "top": 1669.52,
+      "width": 256.2598425196851,
+      "bottom": 1691.12,
+      "text": "[1.00, 24.00]",
+      "font_size": 18
+    },
+    {
+      "x": 593.2598425196851,
+      "top": 1705.12,
+      "width": 96,
+      "bottom": 1726.7199999999998,
+      "text": "Test",
+      "font_size": 18
+    },
+    {
+      "x": 703.2598425196851,
+      "top": 1705.12,
+      "width": 119,
+      "bottom": 1726.7199999999998,
+      "text": "+383",
+      "font_size": 18
+    },
+    {
+      "x": 836.2598425196851,
+      "top": 1705.12,
+      "width": 256.2598425196851,
+      "bottom": 1726.7199999999998,
+      "text": "[45.95, 418.00]",
+      "font_size": 18
+    },
+    {
+      "x": 585.2598425196851,
+      "top": 1742.7199999999998,
+      "width": 513.2598425196851,
+      "bottom": 1764.9499999999998,
+      "text": "<b>H3-H0: no stable positive history increment</b>",
+      "font_size": 19
+    },
+    {
+      "x": 675.2598425196851,
+      "top": 1922.9499999999998,
+      "width": 40,
+      "bottom": 1941.9999999999998,
+      "text": "-30",
+      "font_size": 15
+    },
+    {
+      "x": 730.2598425196851,
+      "top": 1922.9499999999998,
+      "width": 40,
+      "bottom": 1941.9999999999998,
+      "text": "-20",
+      "font_size": 15
+    },
+    {
+      "x": 785.2598425196851,
+      "top": 1922.9499999999998,
+      "width": 40,
+      "bottom": 1941.9999999999998,
+      "text": "-10",
+      "font_size": 15
+    },
+    {
+      "x": 840.2598425196851,
+      "top": 1922.9499999999998,
+      "width": 40,
+      "bottom": 1941.9999999999998,
+      "text": "0",
+      "font_size": 15
+    },
+    {
+      "x": 895.2598425196851,
+      "top": 1922.9499999999998,
+      "width": 40,
+      "bottom": 1941.9999999999998,
+      "text": "10",
+      "font_size": 15
+    },
+    {
+      "x": 585.2598425196851,
+      "top": 1782.9499999999998,
+      "width": 94,
+      "bottom": 1805.8099999999997,
+      "text": "Dev F1",
+      "font_size": 18
+    },
+    {
+      "x": 935.2598425196851,
+      "top": 1782.9499999999998,
+      "width": 163.2598425196851,
+      "bottom": 1804.5399999999997,
+      "text": "+2 [-3, 10]",
+      "font_size": 17
+    },
+    {
+      "x": 585.2598425196851,
+      "top": 1818.9499999999998,
+      "width": 94,
+      "bottom": 1841.8099999999997,
+      "text": "Dev F2",
+      "font_size": 18
+    },
+    {
+      "x": 935.2598425196851,
+      "top": 1818.9499999999998,
+      "width": 163.2598425196851,
+      "bottom": 1840.5399999999997,
+      "text": "-11 [-28, 3]",
+      "font_size": 17
+    },
+    {
+      "x": 585.2598425196851,
+      "top": 1854.9499999999998,
+      "width": 94,
+      "bottom": 1877.8099999999997,
+      "text": "Valid.",
+      "font_size": 18
+    },
+    {
+      "x": 935.2598425196851,
+      "top": 1854.9499999999998,
+      "width": 163.2598425196851,
+      "bottom": 1876.5399999999997,
+      "text": "+4 [-8, 10]",
+      "font_size": 17
+    },
+    {
+      "x": 585.2598425196851,
+      "top": 1890.9499999999998,
+      "width": 94,
+      "bottom": 1913.8099999999997,
+      "text": "Test",
+      "font_size": 18
+    },
+    {
+      "x": 935.2598425196851,
+      "top": 1890.9499999999998,
+      "width": 163.2598425196851,
+      "bottom": 1912.5399999999997,
+      "text": "-7 [-20, 1]",
+      "font_size": 17
+    },
+    {
+      "x": 585.2598425196851,
+      "top": 1952.9499999999998,
+      "width": 513.2598425196851,
+      "bottom": 2016.1299999999999,
+      "text": "H3-H0 changes sign: <b>+2, -11, +4, -7</b>. Every main 3-day interval crosses zero; this does not establish equivalence. AP and top-K hits describe different ranking regions.",
+      "font_size": 18
+    },
+    {
+      "x": 585.2598425196851,
+      "top": 2040.1299999999999,
+      "width": 34,
+      "bottom": 2064.2599999999998,
+      "text": "09",
+      "font_size": 19
+    },
+    {
+      "x": 624.2598425196851,
+      "top": 2038.1299999999999,
+      "width": 474.2598425196851,
+      "bottom": 2068.6099999999997,
+      "text": "What the ablations establish",
+      "font_size": 24
+    },
+    {
+      "x": 585.2598425196851,
+      "top": 2077.6099999999997,
+      "width": 513.2598425196851,
+      "bottom": 2140.7899999999995,
+      "text": "<b>Clipping drives the repair.</b> LR1-LR0: +27/+13/+13/+376 hits. Stronger L2 (LR2-LR1): -3/-1/-4/+7 across F1/F2/validation/test; no consistent extra gain.",
+      "font_size": 18
+    },
+    {
+      "x": 1126.5196850393702,
+      "top": 482,
+      "width": 34,
+      "bottom": 506.13,
+      "text": "10",
+      "font_size": 19
+    },
+    {
+      "x": 1165.5196850393702,
+      "top": 480,
+      "width": 474.2598425196851,
+      "bottom": 510.48,
+      "text": "Diagnosing the LR failure",
+      "font_size": 24
+    },
+    {
+      "x": 1126.5196850393702,
+      "top": 519.48,
+      "width": 513.2598425196851,
+      "bottom": 582.66,
+      "text": "<b>394 columns x 3 partitions</b>: missingness, unique values, constants, quantiles, non-finite/unseen values and train-range exceedances. Raw maxima:",
+      "font_size": 18
+    },
+    {
+      "x": 1134.5196850393702,
+      "top": 596.66,
+      "width": 132,
+      "bottom": 619.52,
+      "text": "Field",
+      "font_size": 18
+    },
+    {
+      "x": 1280.5196850393702,
+      "top": 596.66,
+      "width": 157,
+      "bottom": 619.52,
+      "text": "Train max",
+      "font_size": 18
+    },
+    {
+      "x": 1451.5196850393702,
+      "top": 596.66,
+      "width": 182.2598425196851,
+      "bottom": 619.52,
+      "text": "Test max",
+      "font_size": 18
+    },
+    {
+      "x": 1134.5196850393702,
+      "top": 630.66,
+      "width": 132,
+      "bottom": 653.4599999999999,
+      "text": "V323",
+      "font_size": 19
+    },
+    {
+      "x": 1280.5196850393702,
+      "top": 630.66,
+      "width": 157,
+      "bottom": 653.4599999999999,
+      "text": "49",
+      "font_size": 19
+    },
+    {
+      "x": 1451.5196850393702,
+      "top": 630.66,
+      "width": 182.2598425196851,
+      "bottom": 653.4599999999999,
+      "text": "1411",
+      "font_size": 19
+    },
+    {
+      "x": 1134.5196850393702,
+      "top": 667.4599999999999,
+      "width": 132,
+      "bottom": 690.2599999999999,
+      "text": "V324",
+      "font_size": 19
+    },
+    {
+      "x": 1280.5196850393702,
+      "top": 667.4599999999999,
+      "width": 157,
+      "bottom": 690.2599999999999,
+      "text": "33",
+      "font_size": 19
+    },
+    {
+      "x": 1451.5196850393702,
+      "top": 667.4599999999999,
+      "width": 182.2598425196851,
+      "bottom": 690.2599999999999,
+      "text": "976",
+      "font_size": 19
+    },
+    {
+      "x": 1134.5196850393702,
+      "top": 704.2599999999999,
+      "width": 132,
+      "bottom": 727.0599999999998,
+      "text": "V177",
+      "font_size": 19
+    },
+    {
+      "x": 1280.5196850393702,
+      "top": 704.2599999999999,
+      "width": 157,
+      "bottom": 727.0599999999998,
+      "text": "47",
+      "font_size": 19
+    },
+    {
+      "x": 1451.5196850393702,
+      "top": 704.2599999999999,
+      "width": 182.2598425196851,
+      "bottom": 727.0599999999998,
+      "text": "861",
+      "font_size": 19
+    },
+    {
+      "x": 1126.5196850393702,
+      "top": 743.0599999999998,
+      "width": 513.2598425196851,
+      "bottom": 827.2999999999998,
+      "text": "V323 median: <b>733 on days 171-172</b>, 0 on other test days (nonmissing). Score contributions and date concentration support an extreme-input diagnosis, not a unique causal explanation.",
+      "font_size": 18
+    },
+    {
+      "x": 1126.5196850393702,
+      "top": 834.2999999999998,
+      "width": 513.2598425196851,
+      "bottom": 855.3599999999998,
+      "text": "<b>LR0 top 443 reviews: 442 from two dates; 0 hits.</b>",
+      "font_size": 18
+    },
+    {
+      "x": 1135.5196850393702,
+      "top": 867.3599999999998,
+      "width": 180.7514974849363,
+      "bottom": 888.9499999999998,
+      "text": "Day 171: 169",
+      "font_size": 17
+    },
+    {
+      "x": 1329.2711825243064,
+      "top": 867.3599999999998,
+      "width": 296.3678036295125,
+      "bottom": 888.9499999999998,
+      "text": "Day 172: 273",
+      "font_size": 17
+    },
+    {
+      "x": 1126.5196850393702,
+      "top": 901.3599999999998,
+      "width": 513.2598425196851,
+      "bottom": 961.0299999999997,
+      "text": "One review remains on day 181. Duplicate inputs are also audited; identical anonymous fields alone do not prove leakage. No automatic deduplication.",
+      "font_size": 17
+    },
+    {
+      "x": 1126.5196850393702,
+      "top": 985.0299999999997,
+      "width": 34,
+      "bottom": 1009.1599999999997,
+      "text": "11",
+      "font_size": 19
+    },
+    {
+      "x": 1165.5196850393702,
+      "top": 983.0299999999997,
+      "width": 474.2598425196851,
+      "bottom": 1013.5099999999998,
+      "text": "Daily capacity: matched totals",
+      "font_size": 24
+    },
+    {
+      "x": 1126.5196850393702,
+      "top": 1022.5099999999998,
+      "width": 513.2598425196851,
+      "bottom": 1064.6299999999997,
+      "text": "Test: <b>16 reviews/day = 496 slots</b>. Compare with the same 496 global reviews; differences are daily minus global hits.",
+      "font_size": 18
+    },
+    {
+      "x": 1134.5196850393702,
+      "top": 1078.6299999999997,
+      "width": 122,
+      "bottom": 1101.4899999999996,
+      "text": "Model",
+      "font_size": 18
+    },
+    {
+      "x": 1270.5196850393702,
+      "top": 1078.6299999999997,
+      "width": 102,
+      "bottom": 1101.4899999999996,
+      "text": "Daily",
+      "font_size": 18
+    },
+    {
+      "x": 1386.5196850393702,
+      "top": 1078.6299999999997,
+      "width": 102,
+      "bottom": 1101.4899999999996,
+      "text": "Global",
+      "font_size": 18
+    },
+    {
+      "x": 1502.5196850393702,
+      "top": 1078.6299999999997,
+      "width": 131.2598425196851,
+      "bottom": 1101.4899999999996,
+      "text": "Diff.",
+      "font_size": 18
+    },
+    {
+      "x": 1134.5196850393702,
+      "top": 1112.6299999999997,
+      "width": 122,
+      "bottom": 1135.4299999999996,
+      "text": "LR0",
+      "font_size": 19
+    },
+    {
+      "x": 1270.5196850393702,
+      "top": 1112.6299999999997,
+      "width": 102,
+      "bottom": 1135.4299999999996,
+      "text": "301",
+      "font_size": 19
+    },
+    {
+      "x": 1386.5196850393702,
+      "top": 1112.6299999999997,
+      "width": 102,
+      "bottom": 1135.4299999999996,
+      "text": "0",
+      "font_size": 19
+    },
+    {
+      "x": 1502.5196850393702,
+      "top": 1112.6299999999997,
+      "width": 131.2598425196851,
+      "bottom": 1135.4299999999996,
+      "text": "+301",
+      "font_size": 19
+    },
+    {
+      "x": 1134.5196850393702,
+      "top": 1149.4299999999996,
+      "width": 122,
+      "bottom": 1172.2299999999996,
+      "text": "LR2",
+      "font_size": 19
+    },
+    {
+      "x": 1270.5196850393702,
+      "top": 1149.4299999999996,
+      "width": 102,
+      "bottom": 1172.2299999999996,
+      "text": "369",
+      "font_size": 19
+    },
+    {
+      "x": 1386.5196850393702,
+      "top": 1149.4299999999996,
+      "width": 102,
+      "bottom": 1172.2299999999996,
+      "text": "422",
+      "font_size": 19
+    },
+    {
+      "x": 1502.5196850393702,
+      "top": 1149.4299999999996,
+      "width": 131.2598425196851,
+      "bottom": 1172.2299999999996,
+      "text": "-53",
+      "font_size": 19
+    },
+    {
+      "x": 1134.5196850393702,
+      "top": 1186.2299999999996,
+      "width": 122,
+      "bottom": 1209.0299999999995,
+      "text": "LGB-H0",
+      "font_size": 19
+    },
+    {
+      "x": 1270.5196850393702,
+      "top": 1186.2299999999996,
+      "width": 102,
+      "bottom": 1209.0299999999995,
+      "text": "435",
+      "font_size": 19
+    },
+    {
+      "x": 1386.5196850393702,
+      "top": 1186.2299999999996,
+      "width": 102,
+      "bottom": 1209.0299999999995,
+      "text": "461",
+      "font_size": 19
+    },
+    {
+      "x": 1502.5196850393702,
+      "top": 1186.2299999999996,
+      "width": 131.2598425196851,
+      "bottom": 1209.0299999999995,
+      "text": "-26",
+      "font_size": 19
+    },
+    {
+      "x": 1134.5196850393702,
+      "top": 1223.0299999999995,
+      "width": 122,
+      "bottom": 1245.8299999999995,
+      "text": "LGB-H3",
+      "font_size": 19
+    },
+    {
+      "x": 1270.5196850393702,
+      "top": 1223.0299999999995,
+      "width": 102,
+      "bottom": 1245.8299999999995,
+      "text": "431",
+      "font_size": 19
+    },
+    {
+      "x": 1386.5196850393702,
+      "top": 1223.0299999999995,
+      "width": 102,
+      "bottom": 1245.8299999999995,
+      "text": "455",
+      "font_size": 19
+    },
+    {
+      "x": 1502.5196850393702,
+      "top": 1223.0299999999995,
+      "width": 131.2598425196851,
+      "bottom": 1245.8299999999995,
+      "text": "-24",
+      "font_size": 19
+    },
+    {
+      "x": 1126.5196850393702,
+      "top": 1261.8299999999995,
+      "width": 513.2598425196851,
+      "bottom": 1325.0099999999995,
+      "text": "LR0: +301 hits, 3-day 95% interval <b>[-38, 341.02]</b>. LR2/H0/H3 lose 53/26/24 hits. This end-of-day batch scenario gives no universal improvement.",
+      "font_size": 18
+    },
+    {
+      "x": 1138.5196850393702,
+      "top": 1342.0099999999995,
+      "width": 489.2598425196851,
+      "bottom": 1363.5999999999995,
+      "text": "POST-HOC DATE CHECK",
+      "font_size": 17
+    },
+    {
+      "x": 1138.5196850393702,
+      "top": 1369.0099999999995,
+      "width": 489.2598425196851,
+      "bottom": 1441.3999999999996,
+      "text": "Omit days 171-172: LR0 daily advantage flips<br/><b>+301 to -8 hits</b>; LR2 still leads LR0 by<br/><b>87 hits (362 vs 275; 414 period slots).</b>",
+      "font_size": 19
+    },
+    {
+      "x": 1126.5196850393702,
+      "top": 1457.0099999999995,
+      "width": 513.2598425196851,
+      "bottom": 1516.6799999999996,
+      "text": "Fixed models, scores and history; evaluation rows are filtered and budgets rematched. All <b>332 continuous 1/2/7-day omission windows</b> are reported; the full test remains primary.",
+      "font_size": 17
+    },
+    {
+      "x": 1126.5196850393702,
+      "top": 1540.6799999999996,
+      "width": 34,
+      "bottom": 1564.8099999999997,
+      "text": "12",
+      "font_size": 19
+    },
+    {
+      "x": 1165.5196850393702,
+      "top": 1538.6799999999996,
+      "width": 474.2598425196851,
+      "bottom": 1569.1599999999996,
+      "text": "How sensitive is inference?",
+      "font_size": 24
+    },
+    {
+      "x": 1126.5196850393702,
+      "top": 1578.1599999999996,
+      "width": 513.2598425196851,
+      "bottom": 1620.2799999999995,
+      "text": "Test H3-H0 = -7 hits. Post-hoc block-length checks retain the original 3-day result:",
+      "font_size": 18
+    },
+    {
+      "x": 1134.5196850393702,
+      "top": 1634.2799999999995,
+      "width": 151,
+      "bottom": 1655.8699999999994,
+      "text": "Block length",
+      "font_size": 17
+    },
+    {
+      "x": 1299.5196850393702,
+      "top": 1634.2799999999995,
+      "width": 155,
+      "bottom": 1655.8699999999994,
+      "text": "95% interval",
+      "font_size": 17
+    },
+    {
+      "x": 1468.5196850393702,
+      "top": 1634.2799999999995,
+      "width": 165.2598425196851,
+      "bottom": 1655.8699999999994,
+      "text": "Crosses 0?",
+      "font_size": 17
+    },
+    {
+      "x": 1134.5196850393702,
+      "top": 1668.2799999999995,
+      "width": 151,
+      "bottom": 1689.8799999999994,
+      "text": "1 day",
+      "font_size": 18
+    },
+    {
+      "x": 1299.5196850393702,
+      "top": 1668.2799999999995,
+      "width": 155,
+      "bottom": 1689.8799999999994,
+      "text": "[-19, 1]",
+      "font_size": 18
+    },
+    {
+      "x": 1468.5196850393702,
+      "top": 1668.2799999999995,
+      "width": 165.2598425196851,
+      "bottom": 1689.8799999999994,
+      "text": "Yes",
+      "font_size": 18
+    },
+    {
+      "x": 1134.5196850393702,
+      "top": 1703.8799999999994,
+      "width": 151,
+      "bottom": 1725.4799999999993,
+      "text": "3 days",
+      "font_size": 18
+    },
+    {
+      "x": 1299.5196850393702,
+      "top": 1703.8799999999994,
+      "width": 155,
+      "bottom": 1725.4799999999993,
+      "text": "[-20, 1]",
+      "font_size": 18
+    },
+    {
+      "x": 1468.5196850393702,
+      "top": 1703.8799999999994,
+      "width": 165.2598425196851,
+      "bottom": 1725.4799999999993,
+      "text": "Yes",
+      "font_size": 18
+    },
+    {
+      "x": 1134.5196850393702,
+      "top": 1739.4799999999993,
+      "width": 151,
+      "bottom": 1761.0799999999992,
+      "text": "7 days",
+      "font_size": 18
+    },
+    {
+      "x": 1299.5196850393702,
+      "top": 1739.4799999999993,
+      "width": 155,
+      "bottom": 1761.0799999999992,
+      "text": "[-19, -1]",
+      "font_size": 18
+    },
+    {
+      "x": 1468.5196850393702,
+      "top": 1739.4799999999993,
+      "width": 165.2598425196851,
+      "bottom": 1761.0799999999992,
+      "text": "No",
+      "font_size": 18
+    },
+    {
+      "x": 1126.5196850393702,
+      "top": 1777.0799999999992,
+      "width": 513.2598425196851,
+      "bottom": 1861.3199999999993,
+      "text": "7-day blocks give a negative interval; 1/3-day blocks cross zero. None supports stable positive history gains. LR2-LR0 is positive on test at all three block lengths, with weaker evidence elsewhere.",
+      "font_size": 18
+    },
+    {
+      "x": 1126.5196850393702,
+      "top": 1868.3199999999993,
+      "width": 513.2598425196851,
+      "bottom": 1927.9899999999993,
+      "text": "Fixed-model intervals omit training uncertainty and multiplicity correction. <b>31 test day buckets</b> limit small-effect and long-term claims; resampling adds no new months.",
+      "font_size": 17
+    },
+    {
+      "x": 1126.5196850393702,
+      "top": 1951.9899999999993,
+      "width": 34,
+      "bottom": 1976.1199999999994,
+      "text": "13",
+      "font_size": 19
+    },
+    {
+      "x": 1165.5196850393702,
+      "top": 1949.9899999999993,
+      "width": 474.2598425196851,
+      "bottom": 1980.4699999999993,
+      "text": "Verified engineering and evidence",
+      "font_size": 24
+    },
+    {
+      "x": 1126.5196850393702,
+      "top": 1989.4699999999993,
+      "width": 513.2598425196851,
+      "bottom": 2052.649999999999,
+      "text": "<b>10 correctness tests passed.</b> Independent checks: <b>36 period/config groups</b>, <b>4,320 daily groups</b> and <b>76,995 queue records</b>.",
+      "font_size": 18
+    },
+    {
+      "x": 1126.5196850393702,
+      "top": 2059.649999999999,
+      "width": 513.2598425196851,
+      "bottom": 2101.769999999999,
+      "text": "Supplement: <b>1,182 missingness values</b>, 28 baseline metric groups and <b>259 independent omission/model checks</b>.",
+      "font_size": 18
+    },
+    {
+      "x": 1126.5196850393702,
+      "top": 2108.769999999999,
+      "width": 513.2598425196851,
+      "bottom": 2148.5499999999993,
+      "text": "Clean environment: install, pip check, 10 tests and synthetic pipeline passed; <b>no real-data refit</b>.",
+      "font_size": 17
+    },
+    {
+      "x": 57.0,
+      "top": 2195,
+      "width": 487.2598425196851,
+      "bottom": 2217.86,
+      "text": "REPAIR",
+      "font_size": 18
+    },
+    {
+      "x": 57.0,
+      "top": 2225,
+      "width": 487.2598425196851,
+      "bottom": 2250.4,
+      "text": "Train-only clipping restores much of the LR ranking.",
+      "font_size": 20
+    },
+    {
+      "x": 598.2598425196851,
+      "top": 2195,
+      "width": 487.2598425196851,
+      "bottom": 2217.86,
+      "text": "RETAIN NEGATIVE RESULTS",
+      "font_size": 18
+    },
+    {
+      "x": 598.2598425196851,
+      "top": 2225,
+      "width": 487.2598425196851,
+      "bottom": 2250.4,
+      "text": "History gains do not persist across evaluation periods.",
+      "font_size": 20
+    },
+    {
+      "x": 1139.5196850393702,
+      "top": 2195,
+      "width": 487.2598425196851,
+      "bottom": 2217.86,
+      "text": "TEST ON NEW TIME",
+      "font_size": 18
+    },
+    {
+      "x": 1139.5196850393702,
+      "top": 2225,
+      "width": 487.2598425196851,
+      "bottom": 2275.8,
+      "text": "Next: a genuinely unseen labeled period under a fixed protocol.",
+      "font_size": 20
+    },
+    {
+      "x": 44,
+      "top": 2296,
+      "width": 1595.7795275590554,
+      "bottom": 2315.05,
+      "text": "Scope: retrospective ranking, uncalibrated scores and assumed review budgets. No verified deployment, causal mechanism, label-delay model, financial return or long-run staffing optimum is claimed.",
+      "font_size": 15
+    },
+    {
+      "x": 44,
+      "top": 2338,
+      "width": 1595.7795275590554,
+      "bottom": 2354.51,
+      "text": "Sources: verified study_20261121_01; executed_summary.json; supplement_20261121_01; frozen plan2. [1] Kaggle / Vesta, IEEE-CIS Fraud Detection (2019). [2] Ke et al., LightGBM, NeurIPS (2017). [3] Saito &amp; Rehmsmeier, precision-recall evaluation, PLOS ONE (2015).",
+      "font_size": 13
+    }
+  ]
+}

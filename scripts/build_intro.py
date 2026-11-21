@@ -19,7 +19,7 @@ def main():
     content=template.read_text()
     if content.count("__STUDY_DATA__")!=1:raise ValueError("Expected one data placeholder")
     content=content.replace("__STUDY_DATA__",json.dumps(data,ensure_ascii=False,separators=(",",":")).replace("</","<\\/"))
-    out=ROOT/"deliverables/presentation"
+    out=ROOT/"presentation"
     out.mkdir(parents=True,exist_ok=True)
     destination=out/"project-intro.html"
     destination.write_text(content)

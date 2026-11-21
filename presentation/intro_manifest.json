@@ -1,0 +1,12 @@
+{
+  "created_at_utc": "2026-11-21T15:43:21.469751+00:00",
+  "self_contained": true,
+  "language": "zh-CN",
+  "sources_sha256": {
+    "evidence/executed_summary.json": "058bc75e9e22b4f62cf59c90835a33903c79690a610c85f52da685cf03dab903",
+    "evidence/supplement_20261121_01/sensitivity.json": "4fcd6e520ab9e39bade261b2f46797503a148b1e22fd062df02e1a0bd07a6290",
+    "scripts/project_intro.template.html": "d95607c26bbc6a3dff2ad6858c193404566330c5ef176750ad57d71b8818d970"
+  },
+  "code_sha256": "72cd6650d08014cd3903589cdde63102044806c6bbd87b39e31feb285ee7b006",
+  "output_sha256": "db7ec72311aff701fb72acba846dd0eca0d0b07cf4a4305a2de34f3ac1e721af"
+}

@@ -9,7 +9,7 @@ import {createHash} from 'node:crypto';
 const require=createRequire(import.meta.url);
 const {chromium}=require(process.env.FRAUDML_PLAYWRIGHT_MODULE || 'playwright');
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const html=path.join(root,'deliverables/presentation/project-intro.html');
+const html=path.join(root,'presentation/project-intro.html');
 const out=path.join(root,'results/presentation_qa_20261121');
 await mkdir(out,{recursive:true});
 const summary=JSON.parse(await readFile(path.join(root,'evidence/executed_summary.json'),'utf8'));

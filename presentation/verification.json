@@ -1,0 +1,77 @@
+{
+  "status": "passed",
+  "created_at_utc": "2026-11-21T15:47:48.788378+00:00",
+  "scope": "Presentation relocation, redesigned poster and regenerated introduction; no model retraining.",
+  "poster": {
+    "pages": 1,
+    "size_mm": [
+      594,
+      841
+    ],
+    "sections": 13,
+    "text_rectangles_checked": 257,
+    "overlapping_text_rectangles": 0,
+    "out_of_bounds_text_rectangles": 0,
+    "actual_used_fonts": [
+      "AAAAAA+Arial-BoldMT",
+      "AAAAAA+ArialMT"
+    ],
+    "actual_used_fonts_embedded": true,
+    "matrix_metric_cells_verified": 28,
+    "daily_model_rows_verified": 4,
+    "precision_recall_ap_rows_verified": 4,
+    "lr_interval_rows_verified": 4,
+    "baseline_commit": "54d0476",
+    "baseline_extracted_word_count": 593,
+    "new_extracted_word_count": 1196,
+    "preview_pixels": [
+      1484,
+      2100
+    ],
+    "visual_review": "passed; full-page rendered PNG inspected"
+  },
+  "browser": {
+    "status": "passed",
+    "created_at_utc": "2026-11-21T15:44:55.649Z",
+    "browser": "158.0.8127.37",
+    "html_sha256": "db7ec72311aff701fb72acba846dd0eca0d0b07cf4a4305a2de34f3ac1e721af",
+    "result_scenarios": 16,
+    "toy_scenarios": 16,
+    "daily_scenarios": 2,
+    "link_checks": 12,
+    "layouts": [
+      {
+        "width": 1440,
+        "scrollWidth": 1440,
+        "scheme": "light"
+      },
+      {
+        "width": 390,
+        "scrollWidth": 390,
+        "scheme": "light"
+      },
+      {
+        "width": 320,
+        "scrollWidth": 320,
+        "scheme": "light"
+      },
+      {
+        "width": 1440,
+        "scrollWidth": 1440,
+        "scheme": "dark"
+      }
+    ],
+    "external_network_requests": [],
+    "console_or_page_errors": []
+  },
+  "sha256": {
+    "Team-FraudML-Poster.pdf": "573f5b823fb367c09d50fcf3302e63e63e963e0fca97173e3e2836c763cf96bf",
+    "project-intro.html": "db7ec72311aff701fb72acba846dd0eca0d0b07cf4a4305a2de34f3ac1e721af",
+    "poster-preview.png": "5761876ed2397bec63e79a0b926640c7e3e45237d5937385134ac897e4f8338b"
+  },
+  "limitations": [
+    "This is presentation QA, not a new model-results verification or refit.",
+    "Existing validate_plan.py cannot run to completion in this checkout because ../FraudML-main/artifacts/validation_base.json is absent."
+  ],
+  "relative_markdown_links_verified": 30
+}

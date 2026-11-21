@@ -4,7 +4,11 @@
 
 本目录是新版方案工作区，原项目 `../FraudML-main/` 与数据 `../ieee-fraud-detection/` 保持不变。不安排成员分工。
 
-展示材料已增加：[英文A1海报](deliverables/presentation/Team-FraudML-Poster.pdf)、[面向计算机本科生的中文交互介绍页](deliverables/presentation/project-intro.html)和[使用说明与课程要求对照](deliverables/presentation/README.md)。网页无需联网，可调整教学审核名额并切换真实实验时期、预算与每日对照。海报与网页不替代课程要求的演示PDF、录制和代码附录PDF；此前提交ZIP不含本次新增材料。
+**团队展示材料统一放在根目录 [`presentation/`](presentation/)，与本 README 同级。**
+
+新版海报采用三栏13节，增加完整跨期结果、预算曲线、消融与区间图、数据审计及核验工作量。
+
+展示材料：[英文A1海报](presentation/Team-FraudML-Poster.pdf)、[面向计算机本科生的中文交互介绍页](presentation/project-intro.html)和[使用说明与课程要求对照](presentation/README.md)。网页无需联网，可调整教学审核名额并切换真实实验时期、预算与每日对照。海报与网页不替代课程要求的演示PDF、录制和代码附录PDF；此前提交ZIP不含本次新增材料。
 
 已完成21次核心拟合、3次旧版重跑，以及每期1000次配对3日块重采样。10项正确性测试通过，真实数据结果通过独立核验：36组时期与配置、4320组每日评价、76995条审核队列记录。主实验状态为verified。`scripts/validate_plan.py`只检查冻结方案与原证据，不能替代模型结果核验。
 
@@ -53,4 +57,4 @@ configs/study_plan.json中的planned与training_executed=false表示冻结方案
 
 数据不足以支持的长期、实时和财务收益结论保留为局限，不用重复抽样、增加模型或移动切点来弥补。
 
-本地提交包：deliverables/FraudML-v2-coursework-20261121.zip。包含正式Markdown报告、研究图、代码、聚合证据与必要旧来源，不含原始交易、逐笔分数、模型或运行环境。包内逐文件哈希可核验；完整真实数据重训仍需原始数据。未上传或提交。生成方法见[复现指南](docs/复现指南.md)。
+本地提交包：deliverables/FraudML-v2-coursework-20261121.zip。包含正式Markdown报告、研究图、代码、聚合证据与必要旧来源，不含原始交易、逐笔分数、模型或运行环境。包内逐文件哈希可核验；完整真实数据重训仍需原始数据。尚未向课程平台提交。生成方法见[复现指南](docs/复现指南.md)。
